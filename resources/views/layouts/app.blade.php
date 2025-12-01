@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@yield('title', 'Konami Plast Engineering')</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    @stack('styles')
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="absolute top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3 sm:py-4 md:py-6">
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-2">
+                        <div class="relative group">
+                            <img src="{{ asset('uploads/icon_11.png') }}" alt="Konami Plast Engineering" class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 object-contain transform transition-all duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="relative">
+                            <a href="/" class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent hover:from-blue-200 hover:via-white hover:to-blue-200 transition-all duration-500 tracking-tight">
+                                Konami
+                            </a>
+                            <div class="text-xs sm:text-sm md:text-base font-semibold text-blue-300 tracking-wide">Plast Engineering</div>
+                            <div class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-blue-400 to-transparent transform scale-x-0 hover:scale-x-100 transition-transform duration-500"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-2">
+                    <a href="/" class="nav-link relative px-6 py-3 text-white font-semibold tracking-wide hover:text-blue-200 transition-all duration-300 group">
+                        <span class="relative z-10 flex items-center">
+                            <i class="fas fa-home mr-2 text-blue-300"></i>
+                            Home
+                        </span>
+                        <div class="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    </a>
+                    
+                    <!-- Categories Dropdown -->
+                    <div class="relative group" id="categoriesDropdown">
+                        <button class="nav-link relative px-6 py-3 text-white font-semibold tracking-wide hover:text-blue-200 transition-all duration-300 group flex items-center">
+                            <span class="relative z-10 flex items-center">
+                                <i class="fas fa-th-large mr-2 text-blue-300"></i>
+                                Categories
+                                <i class="fas fa-chevron-down ml-2 text-xs text-blue-300 group-hover:rotate-180 transition-transform duration-300"></i>
+                            </span>
+                            <div class="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                        </button>
+                        
+                        <!-- Dropdown Menu -->
+                        <div class="absolute top-full left-0 mt-2 w-screen max-w-md sm:max-w-2xl lg:max-w-6xl bg-gray-900/95 backdrop-blur-md rounded-2xl shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 border border-white/10 left-1/2 -translate-x-1/2">
+                            <div class="p-6">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                                    <!-- PVC Category -->
+                                    <div class="category-group">
+                                        <a href="/category/pvc" class="block px-4 py-3 text-blue-400 font-semibold text-sm uppercase tracking-wider border-b border-white/10 mb-4 hover:text-white transition-colors duration-200">
+                                            <i class="fas fa-cube mr-2"></i>
+                                            PVC Pipes
+                                        </a>
+                                        <div class="space-y-1">
+                                            <a href="/category/pvc/u-pipes" class="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-all duration-200 group/item">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                                        <span>U-Pipes</span>
+                                                    </div>
+                                                    <i class="fas fa-arrow-right text-white/40 group-hover/item:text-white transition-colors"></i>
+                                                </div>
+                                            </a>
+                                            <a href="/category/pvc/swivel-pipes" class="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-all duration-200 group/item">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                                        <span>Swivel Pipes</span>
+                                                    </div>
+                                                    <i class="fas fa-arrow-right text-white/40 group-hover/item:text-white transition-colors"></i>
+                                                </div>
+                                            </a>
+                                            <a href="/category/pvc/column-pipes" class="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-all duration-200 group/item">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                                        <span>Column Pipes</span>
+                                                    </div>
+                                                    <i class="fas fa-arrow-right text-white/40 group-hover/item:text-white transition-colors"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- UPVC Category -->
+                                    <div class="category-group">
+                                        <a href="/category/upvc" class="block px-4 py-3 text-blue-400 font-semibold text-sm uppercase tracking-wider border-b border-white/10 mb-4 hover:text-white transition-colors duration-200">
+                                            <i class="fas fa-recycle mr-2"></i>
+                                            UPVC Pipes
+                                        </a>
+                                        <div class="space-y-1">
+                                            <a href="/category/upvc/plumbing-pipes" class="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-all duration-200 group/item">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                                        <span>Plumbing Pipes</span>
+                                                    </div>
+                                                    <i class="fas fa-arrow-right text-white/40 group-hover/item:text-white transition-colors"></i>
+                                                </div>
+                                            </a>
+                                            <a href="/category/upvc/agricultural-pipes" class="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-all duration-200 group/item">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                                        <span>Agricultural Pipes</span>
+                                                    </div>
+                                                    <i class="fas fa-arrow-right text-white/40 group-hover/item:text-white transition-colors"></i>
+                                                </div>
+                                            </a>
+                                            <a href="/category/upvc/industrial-pipes" class="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-all duration-200 group/item">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                                        <span>Industrial Pipes</span>
+                                                    </div>
+                                                    <i class="fas fa-arrow-right text-white/40 group-hover/item:text-white transition-colors"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- CPVC Category -->
+                                    <div class="category-group">
+                                        <a href="/category/cpvc" class="block px-4 py-3 text-blue-400 font-semibold text-sm uppercase tracking-wider border-b border-white/10 mb-4 hover:text-white transition-colors duration-200">
+                                            <i class="fas fa-temperature-high mr-2"></i>
+                                            CPVC Pipes
+                                        </a>
+                                        <div class="space-y-1">
+                                            <a href="/category/cpvc/hot-water-pipes" class="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-all duration-200 group/item">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                                        <span>Hot Water Pipes</span>
+                                                    </div>
+                                                    <i class="fas fa-arrow-right text-white/40 group-hover/item:text-white transition-colors"></i>
+                                                </div>
+                                            </a>
+                                            <a href="/category/cpvc/fire-sprinkler" class="block px-4 py-3 text-white hover:bg-white/10 rounded-lg transition-all duration-200 group/item">
+                                                <div class="flex items-center justify-between">
+                                                    <div class="flex items-center">
+                                                        <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                                        <span>Fire Sprinkler</span>
+                                                    </div>
+                                                    <i class="fas fa-arrow-right text-white/40 group-hover/item:text-white transition-colors"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- View All Categories Link -->
+                                <div class="border-t border-white/10 mt-6 pt-6">
+                                    <div class="flex justify-center">
+                                        <a href="/categories" class="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300">
+                                            <i class="fas fa-th-large mr-2"></i>
+                                            View All Categories
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="/about" class="nav-link relative px-6 py-3 text-white font-semibold tracking-wide hover:text-blue-200 transition-all duration-300 group">
+                        <span class="relative z-10 flex items-center">
+                            <i class="fas fa-building mr-2 text-blue-300"></i>
+                            About Us
+                        </span>
+                        <div class="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    </a>
+                    <a href="/blog" class="nav-link relative px-6 py-3 text-white font-semibold tracking-wide hover:text-blue-200 transition-all duration-300 group">
+                        <span class="relative z-10 flex items-center">
+                            <i class="fas fa-blog mr-2 text-blue-300"></i>
+                            Blogs
+                        </span>
+                        <div class="absolute inset-0 bg-white/10 backdrop-blur-sm rounded-lg scale-0 group-hover:scale-100 transition-transform duration-300"></div>
+                    </a>
+                    
+                    <div class="ml-6 pl-6 border-l border-white/20">
+                        <a href="/contact" class="relative group inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold rounded-xl hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 hover:shadow-2xl transition-all duration-300 overflow-hidden">
+                            <span class="relative z-10 flex items-center">
+                                <i class="fas fa-rocket mr-3"></i>
+                                Contact Us
+                            </span>
+                            <div class="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="lg:hidden flex items-center">
+                    <button type="button" class="text-white/80 hover:text-white p-3 rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all duration-300" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                        <span class="sr-only">Open main menu</span>
+                        <div class="w-6 h-5 relative flex flex-col justify-between">
+                            <span id="bar1" class="block h-0.5 w-6 bg-white transform transition-all duration-300"></span>
+                            <span id="bar2" class="block h-0.5 w-6 bg-white transform transition-all duration-300"></span>
+                            <span id="bar3" class="block h-0.5 w-6 bg-white transform transition-all duration-300"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="lg:hidden fixed inset-0 bg-black/80 backdrop-blur-md z-[60] hidden" id="mobile-menu">
+        <div class="fixed right-0 top-0 h-full w-72 sm:w-80 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 shadow-2xl transform translate-x-full transition-transform duration-500" id="mobile-menu-panel">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-8">
+                    <div class="flex items-center space-x-2">
+                        <div class="relative group">
+                            <img src="{{ asset('uploads/icon_11.png') }}" alt="Konami Plast Engineering" class="w-10 h-10 object-contain transform transition-all duration-500 group-hover:scale-110">
+                        </div>
+                        <div>
+                            <div class="text-xl font-bold text-white">Konami</div>
+                            <div class="text-sm text-blue-300">Plast Engineering</div>
+                        </div>
+                    </div>
+                    <button type="button" class="text-white/60 hover:text-white p-2 rounded-lg hover:bg-white/10 transition-all duration-300" id="close-mobile-menu">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                
+                <div class="space-y-2 max-h-[calc(100vh-200px)] overflow-y-auto pr-2">
+                    <a href="/" class="mobile-nav-link flex items-center px-4 py-4 text-white font-medium rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all duration-300 group">
+                        <i class="fas fa-home mr-4 text-blue-400 group-hover:text-blue-300"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <!-- Categories Dropdown for Mobile -->
+                    <div class="mobile-categories-dropdown">
+                        <button class="mobile-categories-toggle flex items-center px-4 py-4 text-white font-medium rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all duration-300 group w-full">
+                            <i class="fas fa-th-large mr-4 text-blue-400 group-hover:text-blue-300"></i>
+                            <span>Categories</span>
+                            <i class="fas fa-chevron-down ml-auto text-white/40 transition-transform duration-300"></i>
+                        </button>
+                        
+                        <div class="mobile-categories-menu hidden pl-8 pr-4 pb-2">
+                            <a href="/category/pvc" class="block px-4 py-3 text-blue-400 font-semibold text-sm uppercase tracking-wider border-b border-white/10 mb-2">
+                                <i class="fas fa-cube mr-2"></i>
+                                PVC Pipes
+                            </a>
+                            <div class="space-y-1 mb-4">
+                                <a href="/category/pvc/u-pipes" class="block px-4 py-2 text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+                                    <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                    U-Pipes
+                                </a>
+                                <a href="/category/pvc/swivel-pipes" class="block px-4 py-2 text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+                                    <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                    Swivel Pipes
+                                </a>
+                                <a href="/category/pvc/column-pipes" class="block px-4 py-2 text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+                                    <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                    Column Pipes
+                                </a>
+                            </div>
+                            
+                            <a href="/category/upvc" class="block px-4 py-3 text-blue-400 font-semibold text-sm uppercase tracking-wider border-b border-white/10 mb-2">
+                                <i class="fas fa-cube mr-2"></i>
+                                UPVC Pipes
+                            </a>
+                            <div class="space-y-1 mb-4">
+                                <a href="/category/upvc/plumbing-pipes" class="block px-4 py-2 text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+                                    <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                    Plumbing Pipes
+                                </a>
+                                <a href="/category/upvc/agricultural-pipes" class="block px-4 py-2 text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+                                    <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                    Agricultural Pipes
+                                </a>
+                                <a href="/category/upvc/industrial-pipes" class="block px-4 py-2 text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+                                    <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                    Industrial Pipes
+                                </a>
+                            </div>
+                            
+                            <a href="/category/cpvc" class="block px-4 py-3 text-blue-400 font-semibold text-sm uppercase tracking-wider border-b border-white/10 mb-2">
+                                <i class="fas fa-fire mr-2"></i>
+                                CPVC Pipes
+                            </a>
+                            <div class="space-y-1">
+                                <a href="/category/cpvc/hot-water-pipes" class="block px-4 py-2 text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+                                    <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                    Hot Water Pipes
+                                </a>
+                                <a href="/category/cpvc/industrial-cpvc" class="block px-4 py-2 text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+                                    <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                    Industrial CPVC
+                                </a>
+                                <a href="/category/cpvc/fire-safety" class="block px-4 py-2 text-white hover:bg-white/10 rounded-lg transition-all duration-200">
+                                    <i class="fas fa-circle text-xs text-blue-400 mr-3"></i>
+                                    Fire Safety Pipes
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="/about" class="mobile-nav-link flex items-center px-4 py-4 text-white font-medium rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all duration-300 group">
+                        <i class="fas fa-building mr-4 text-blue-400 group-hover:text-blue-300"></i>
+                        <span>About Us</span>
+                    </a>
+                    <a href="/blog" class="mobile-nav-link flex items-center px-4 py-4 text-white font-medium rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all duration-300 group">
+                        <i class="fas fa-blog mr-4 text-blue-400 group-hover:text-blue-300"></i>
+                        <span>Blog</span>
+                    </a>
+                    <a href="/contact" class="mobile-nav-link flex items-center px-4 py-4 text-white font-medium rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all duration-300 group">
+                        <i class="fas fa-phone-alt mr-4 text-blue-400 group-hover:text-blue-300"></i>
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-white/10">
+                    <a href="/products" class="block w-full px-6 py-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center font-bold rounded-xl hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                        <i class="fas fa-shopping-cart mr-2"></i>
+                        View Products
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        @yield('content')
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Konami Plast Engineering</h3>
+                    <p class="text-gray-400">Your trusted partner for high-quality plastic engineering solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="/products" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="/about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="/blog" class="text-gray-400 hover:text-white">Blog</a></li>
+                        <li><a href="/contact" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/privacy-policy" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                        <li><a href="/terms-conditions" class="text-gray-400 hover:text-white">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Us</h4>
+                    <address class="not-italic text-gray-400">
+                        <p>72, Adarsh Industrial Estate</p>
+                        <p>Chhatral, Gandhinagar</p>
+                        <p>Gujarat, 382729</p>
+                        <p>INDIA</p>
+                        <p>Email: konamiplastengineering@gmail.com</p>
+                        <p>Phone: +91 9574952777</p>
+                    </address>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Konami Plast Engineering. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuPanel = document.getElementById('mobile-menu-panel');
+            const closeMobileMenu = document.getElementById('close-mobile-menu');
+            const navbar = document.getElementById('navbar');
+            const bars = [
+                document.getElementById('bar1'),
+                document.getElementById('bar2'),
+                document.getElementById('bar3')
+            ];
+            
+            function openMobileMenu() {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => {
+                    mobileMenuPanel.classList.remove('translate-x-full');
+                    // Animate hamburger to X
+                    bars[0].classList.add('rotate-45', 'translate-y-1.5');
+                    bars[1].classList.add('opacity-0');
+                    bars[2].classList.add('-rotate-45', '-translate-y-1.5');
+                }, 10);
+            }
+            
+            function closeMobileMenuFunc() {
+                mobileMenuPanel.classList.add('translate-x-full');
+                // Reset hamburger animation
+                bars[0].classList.remove('rotate-45', 'translate-y-1.5');
+                bars[1].classList.remove('opacity-0');
+                bars[2].classList.remove('-rotate-45', '-translate-y-1.5');
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 500);
+            }
+            
+            mobileMenuButton.addEventListener('click', openMobileMenu);
+            closeMobileMenu.addEventListener('click', closeMobileMenuFunc);
+            
+            // Mobile categories dropdown
+            const mobileCategoriesToggle = document.querySelector('.mobile-categories-toggle');
+            const mobileCategoriesMenu = document.querySelector('.mobile-categories-menu');
+            
+            if (mobileCategoriesToggle && mobileCategoriesMenu) {
+                mobileCategoriesToggle.addEventListener('click', function() {
+                    mobileCategoriesMenu.classList.toggle('hidden');
+                    const chevron = this.querySelector('.fa-chevron-down');
+                    if (chevron) {
+                        chevron.classList.toggle('rotate-180');
+                    }
+                });
+            }
+            
+            // Close mobile menu when clicking on links
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenuFunc);
+            });
+            
+            // Also close mobile menu when clicking on category links
+            const mobileCategoryLinks = document.querySelectorAll('.mobile-categories-menu a');
+            mobileCategoryLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenuFunc);
+            });
+            
+            // Close mobile menu when clicking outside
+            mobileMenu.addEventListener('click', function(e) {
+                if (e.target === mobileMenu) {
+                    closeMobileMenuFunc();
+                }
+            });
+            
+            // Navbar scroll effect
+            let lastScrollTop = 0;
+            window.addEventListener('scroll', function() {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                if (scrollTop > 100) {
+                    navbar.classList.add('bg-gray-900/95', 'backdrop-blur-md', 'shadow-2xl');
+                    navbar.classList.remove('bg-transparent');
+                } else {
+                    navbar.classList.remove('bg-gray-900/95', 'backdrop-blur-md', 'shadow-2xl');
+                    navbar.classList.add('bg-transparent');
+                }
+                
+                lastScrollTop = scrollTop;
+            });
+        });
+    </script>
+    @stack('scripts')
+</body>
+</html>
