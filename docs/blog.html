@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Konami Plast Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel='stylesheet' href='https://saveraind.com/wp-content/plugins/elementor/assets/css/frontend.min.css' media='all'>
+    <link rel='stylesheet' href='https://saveraind.com/wp-content/uploads/elementor/css/post-1230.css' media='all'>
+    <link rel='stylesheet' href='https://saveraind.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css' media='all'>
+    <link rel='stylesheet' href='https://saveraind.com/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css' media='all'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Match original design styles */
+        .txup {
+            height: 336px;
+            overflow: hidden;
+            transition: all 0.8s ease;
+        }
+        
+        .textup {
+            padding-top: 250px;
+            transition-duration: 0.8s;
+        }
+        
+        .txup:hover .textup {
+            padding-top: 0;
+        }
+        
+        .txup:hover h2 {
+            color: #105CAA;
+        }
+        
+        .follow {
+            color: #105CAA !important;
+            font-size: 22px;
+            font-weight: 900 !important;
+            border: 2px solid #105caa;
+            font-size: 21px;
+            padding: 0px 10px 4px 6px;
+            border-radius: 50%;
+            transform: rotate(20deg);
+            display: inline-block;
+        }
+        
+        .product-read-more {
+            display: none;
+            transition-duration: 0.8s;
+        }
+        
+        .product-read-more-sec:hover .product-read-more {
+            display: block;
+            transition-duration: 0.8s;
+        }
+        
+        /* Elementor-style animations */
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .elementor-invisible {
+            opacity: 0;
+        }
+        
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        
+        .animate-slideInRight {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        
+        .animate-fadeInDown {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        /* Original color scheme */
+        .primary-blue { color: #105CAA; }
+        .primary-orange { color: #F69320; }
+        .bg-primary-blue { background-color: #105CAA; }
+        .bg-primary-orange { background-color: #F69320; }
+        
+        /* Button styles matching original */
+        .elementor-button {
+            background-color: #F69320;
+            color: white;
+            padding: 10px 23px;
+            border-radius: 50px;
+            border: none;
+            font-family: "Inter", Sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .elementor-button:hover {
+            background: #005d8c;
+            color: white;
+        }
+        
+        /* Logo fix */
+        .border-3 {
+            border-width: 3px;
+        }
+        
+        /* Mobile menu */
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        /*  */
+        .primary-blue {
+            color: #105CAA;
+        }
+        .bg-primary-blue {
+            background-color: #105CAA;
+        }
+        .hover\:bg-primary-blue:hover {
+            background-color: #105CAA;
+        }
+        .text-primary-blue {
+            color: #105CAA;
+        }
+        .hover\:text-primary-blue:hover {
+            color: #105CAA;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+        }
+        .col-lg-4 {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            padding: 0 15px;
+        }
+        .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0 15px;
+        }
+        @media (max-width: 768px) {
+            .col-md-6 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        @media (max-width: 576px) {
+            .col-lg-4 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        /* Elementor CSS Variables */
+        :root {
+            --e-global-typography-accent-font-family: "Inter", Sans-serif;
+            --e-global-typography-accent-font-size: 14px;
+            --e-global-typography-accent-font-weight: 600;
+            --e-global-typography-accent-line-height: 1.6;
+            --e-global-typography-accent-letter-spacing: 0px;
+            --e-global-typography-accent-word-spacing: 0px;
+            --e-global-typography-ee9d2b4-font-family: "Inter", Sans-serif;
+            --e-global-typography-883d6c3-font-family: "Inter", Sans-serif;
+        }
+        /* Elementor Post-1230 CSS - Corrected selectors */
+        .elementor-1230 .elementskit-post-image-card{
+            background-color:#FFFFFF;
+            padding:10px;
+            margin:0 0 30px 0;
+            display:block;
+            border-radius:8px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.08);
+        }
+        .elementor-1230 .elementskit-post-image-card .elementskit-post-body{
+            padding:20px 10px;
+        }
+        .elementor-1230 .elementskit-post-body .entry-title{
+            font-family:"Inter", Sans-serif;
+            font-size:18px;
+            font-weight:600;
+            line-height:1.4;
+            text-align:left;
+            margin:0 0 10px 0;
+        }
+        .elementor-1230 .elementskit-post-body .entry-title a{
+            color:#105CAA;
+            text-decoration:none;
+        }
+        .elementor-1230 .elementskit-post-body p{
+            font-family:"Inter", Sans-serif;
+            font-size:14px;
+            font-weight:400;
+            line-height:1.6;
+            color:#666666;
+            text-align:left;
+            margin:0 0 15px 0;
+        }
+        .elementor-1230 .btn-wraper{
+            text-align:left;
+        }
+        .elementor-1230 .elementskit-btn{
+            background-color:#FFFFFF;
+            color:#105CAA;
+            font-family:"Inter", Sans-serif;
+            font-size:14px;
+            font-weight:600;
+            text-decoration:none;
+            border-radius:8px;
+            display:inline-flex;
+            align-items:center;
+        }
+        .elementor-1230 .elementskit-btn:hover{
+            color:#F69320;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Top Bar - Matching original design with primary-blue background -->
+    <div class="bg-primary-blue py-2 px-4">
+        <div class="container mx-auto flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <a href="mailto:konamiplastengineering@gmail.com" class="flex items-center text-white hover:text-gray-200 transition">
+                    <i class="fas fa-envelope mr-2"></i>
+                    konamiplastengineering@gmail.com
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+919574952777" class="flex items-center text-white hover:text-gray-200 transition">
+                    <i class="fas fa-phone mr-2"></i>
+                    +91 95749 52777
+                </a>
+            </div>
+        </div>
+    </div>
+        
+       <!-- Header - Matching original structure -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-4">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(to right, #105CAA, #1e40af); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; flex-shrink: 0;">
+                            KPE
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-3xl font-bold text-gray-800 leading-tight">
+                                Konami
+                            </div>
+                            <div class="text-xl font-semibold primary-blue leading-tight">
+                                Plast Engineering
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8 flex-1 justify-end mr-24">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Home</a>
+                    <a href="aboutUs.html" class="text-gray-700 hover:text-primary-blue font-medium transition">About Us</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-blue font-medium transition flex items-center">
+                            Products &amp; Solutions <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50" style="left: 0; right: auto;">
+                            <div class="py-2">
+                                <div class="relative group/submenu">
+                                    <a href="#" class="block px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 flex items-center justify-between">
+                                        Cables <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-0 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 z-50" style="left: 100%; right: auto;">
+                                        <a href="flat-submersible-cable.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Flat Submersible Cables</a>
+                                        <a href="pvc-house-wires.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC House Wires</a>
+                                        <a href="multicore-round-cables.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Multicore Round Cables</a>
+                                    </div>
+                                </div>
+                                <div class="relative group/submenu">
+                                    <a href="#" class="block px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 flex items-center justify-between">
+                                        Pipes <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-0 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 z-50" style="left: 100%; right: auto;">
+                                        <a href="garden-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Garden Hose</a>
+                                        <a href="braided-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Braided Hose</a>
+                                        <a href="sink-waste-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Sink Waste Pipes</a>
+                                        <a href="inlet-outlet-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Inlet / Outlet Pipes</a>
+                                        <a href="pvc-casing-pipe.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Casing Pipe</a>
+                                        <a href="pvc-rigid-pipe.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Rigid Pipe</a>
+                                        <a href="pvc-sleeves.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Sleeves</a>
+                                        <a href="hdpe-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">HDPE Pipes</a>
+                                        <a href="krishi-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Krishi Hose</a>
+                                        <a href="suction-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Suction Hose</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Blogs</a>
+                    <a href="contacts.html" class="elementor-button">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-80 h-full bg-white shadow-2xl z-50 lg:hidden">
+            <div class="p-4">
+                <button id="closeMobileMenu" class="text-gray-700 mb-8">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium">Home</a>
+                    <a href="aboutUs.html" class="text-gray-700 hover:text-primary-blue font-medium">About Us</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary-blue font-medium">Products & Solutions</a>
+                    <a href="distributor-inquiry.html" class="text-gray-700 hover:text-primary-blue font-medium">Distributor Enquiry</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-primary-blue font-medium">Careers</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary-blue font-medium">Blogs</a>
+                    <a href="contacts.html" class="text-gray-700 hover:text-primary-blue font-medium">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Header Section -->
+    <div class="relative bg-cover bg-center bg-no-repeat py-16" style="background-image: url('uploads/image_14.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative container mx-auto px-4 flex items-center justify-center py-16">
+            <div class="text-center w-full">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mx-auto">Blogs</h2>
+                <h1 class="text-xl md:text-2xl text-white mt-4">Home &nbsp;&nbsp;&gt;&nbsp;&nbsp; Blogs</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Content Section - Modern Tailwind CSS Design -->
+    <div class="bg-gradient-to-br from-gray-50 to-blue-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Blog 1 -->
+                <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <a href="blog-detail-1.html" class="block">
+                            <img src="https://saveraind.com/wp-content/uploads/2025/11/Savera-Blogs-01-1.jpg" 
+                                 alt="Borewells in Winter: Why Choosing the Right PVC Casing Pipe Matters" 
+                                 class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">PVC Pipes</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>November 15, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                            <a href="blog-detail-1.html" class="hover:text-blue-600">
+                                Borewells in Winter: Why Choosing the Right PVC Casing Pipe Matters
+                            </a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            If you're planning a borewell or worried about an existing one during winter months, choosing the right PVC casing pipe is crucial for longevity and performance...
+                        </p>
+                        <a href="blog-detail-1.html" 
+                           class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-300 group">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog 2 -->
+                <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <a href="blog-detail-2.html" class="block">
+                            <img src="https://saveraind.com/wp-content/uploads/2025/11/Savera-Blogs-01.jpg" 
+                                 alt="5-Minute Fix: How to Replace a Leaky Pipe Under Your Kitchen Sink" 
+                                 class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">DIY</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>November 15, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                            <a href="blog-detail-2.html" class="hover:text-blue-600">
+                                5-Minute Fix: How to Replace a Leaky Pipe Under Your Kitchen Sink
+                            </a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            That faint drip… drip… drip from under the kitchen sink is more than just annoying—it's wasting water and potentially causing damage...
+                        </p>
+                        <a href="blog-detail-2.html" 
+                           class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-300 group">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog 3 -->
+                <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <a href="blog-detail-3.html" class="block">
+                            <img src="https://saveraind.com/wp-content/uploads/2025/11/Blog-02-01-768x452.jpg" 
+                                 alt="Corrugated Flexible Pipes: The Unsung Hero of Modern Plumbing & Drainage" 
+                                 class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-orange-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Plumbing</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>November 15, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                            <a href="blog-detail-3.html" class="hover:text-blue-600">
+                                Corrugated Flexible Pipes: The Unsung Hero of Modern Plumbing & Drainage
+                            </a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            If you're searching for the difference between HDPE and PVC pipes, or wondering about the best solutions for modern plumbing challenges...
+                        </p>
+                        <a href="blog-detail-3.html" 
+                           class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-300 group">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog 4 -->
+                <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <a href="blog-detail-4.html" class="block">
+                            <img src="https://saveraind.com/wp-content/uploads/2025/11/Savera_Blog-01-768x452.jpg" 
+                                 alt="How to Protect Your Outdoor Electrical Wires with a Simple PVC Conduit" 
+                                 class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Electrical</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>November 15, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                            <a href="blog-detail-4.html" class="hover:text-blue-600">
+                                How to Protect Your Outdoor Electrical Wires with a Simple PVC Conduit
+                            </a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            Outdoor electrical installations require robust protection against weather elements, physical damage, and potential safety hazards...
+                        </p>
+                        <a href="blog-detail-4.html" 
+                           class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-300 group">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blog 5 -->
+                <div class="group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 overflow-hidden">
+                    <div class="relative overflow-hidden">
+                        <a href="blog-detail-5.html" class="block">
+                            <img src="https://saveraind.com/wp-content/uploads/2025/03/environmental-friendly_cropped_resized_466x274.jpg" 
+                                 alt="The Emergence of Green PVC Pipes Environmental-Friendly Options for India's Infrastructure" 
+                                 class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </a>
+                        <div class="absolute top-4 left-4">
+                            <span class="bg-emerald-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Sustainability</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-3">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <span>November 15, 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                            <a href="blog-detail-5.html" class="hover:text-blue-600">
+                                The Emergence of Green PVC Pipes Environmental-Friendly Options for India's Infrastructure
+                            </a>
+                        </h3>
+                        <p class="text-gray-600 mb-4 line-clamp-3">
+                            India's fast urbanization and industrial growth require a strong and sustainable infrastructure. Conventional piping systems are being replaced by eco-friendly alternatives...
+                        </p>
+                        <a href="blog-detail-5.html" 
+                           class="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors duration-300 group">
+                            Read More
+                            <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    
+      <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(to right, #105CAA, #1e40af); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; flex-shrink: 0;">
+                            KPE
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-3xl font-bold text-white leading-tight">
+                                Konami
+                            </div>
+                            <div class="text-xl font-semibold text-blue-300 leading-tight">
+                                Plast Engineering
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Leading manufacturer of high-quality engineering solutions and PVC pipes for industrial and agricultural applications.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="aboutUs.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="contacts.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="garden-hose.html" class="text-gray-400 hover:text-white transition">Garden Hose</a></li>
+                        <li><a href="hdpe-pipes.html" class="text-gray-400 hover:text-white transition">HDPE Pipes</a></li>
+                        <li><a href="pvc-rigid-pipe.html" class="text-gray-400 hover:text-white transition">PVC Rigid Pipe</a></li>
+                        <li><a href="suction-hose.html" class="text-gray-400 hover:text-white transition">Suction Hose</a></li>
+                        <li><a href="flat-submersible-cable.html" class="text-gray-400 hover:text-white transition">Submersible Cables</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            <span>72, Adarsh Industrial Estate, Chhatral, Gandhinagar, Gujarat, 382729</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+91 95749 52777</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>konamiplastengineering@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Konami Plast Engineering. Designed by Jani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Hero Slider - Matching original functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.qodef-e.swiper-slide');
+        const totalSlides = slides.length;
+        const slider = document.getElementById('heroSlider');
+        
+        // Create pagination bullets dynamically
+        const paginationContainer = document.querySelector('.swiper-pagination');
+        paginationContainer.innerHTML = '';
+        
+        for (let i = 0; i < totalSlides; i++) {
+            const bullet = document.createElement('div');
+            bullet.className = 'swiper-pagination-bullet';
+            if (i === 0) bullet.classList.add('active');
+            bullet.addEventListener('click', () => {
+                currentSlide = i;
+                showSlide(currentSlide);
+            });
+            paginationContainer.appendChild(bullet);
+        }
+        
+        function showSlide(index) {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Update pagination
+            const bullets = document.querySelectorAll('.swiper-pagination-bullet');
+            bullets.forEach((bullet, i) => {
+                bullet.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        document.querySelector('.swiper-button-next').addEventListener('click', nextSlide);
+        document.querySelector('.swiper-button-prev').addEventListener('click', prevSlide);
+
+        // Auto-play slider - matching original speed
+        setInterval(nextSlide, 5000);
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(() => animateCounters(), 10);
+                } else {
+                    counter.innerText = target + '+';
+                }
+            });
+        };
+
+        // Trigger counter animation when in viewport
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const counterSection = document.querySelector('.counter').parentElement.parentElement;
+        if (counterSection) {
+            observer.observe(counterSection);
+        }
+
+        // Tab Functionality
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                
+                // Update button styles
+                tabBtns.forEach(b => {
+                    b.classList.remove('bg-blue-600', 'text-white');
+                    b.classList.add('text-gray-600');
+                });
+                btn.classList.remove('text-gray-600');
+                btn.classList.add('bg-blue-600', 'text-white');
+                
+                // Show/hide content
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+                document.getElementById(tabId).classList.remove('hidden');
+            });
+        });
+
+        // Trigger animations on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.elementor-invisible');
+            
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    element.classList.remove('elementor-invisible');
+                    
+                    // Add appropriate animation class
+                    if (element.classList.contains('animate-slideInLeft')) {
+                        element.style.animation = 'slideInLeft 0.8s ease-out forwards';
+                    } else if (element.classList.contains('animate-slideInRight')) {
+                        element.style.animation = 'slideInRight 0.8s ease-out forwards';
+                    } else if (element.classList.contains('animate-fadeInDown')) {
+                        element.style.animation = 'fadeInDown 0.8s ease-out forwards';
+                    } else if (element.classList.contains('animate-fadeInUp')) {
+                        element.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

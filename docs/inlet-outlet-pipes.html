@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konami Plast Engineering - Inlet / Outlet Pipes Manufacturer</title>
+    <meta name="description" content="Konami Plast Engineering is a leading manufacturer of high-quality inlet and outlet pipes for water distribution and plumbing systems.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Match original design styles */
+        .txup {
+            height: 336px;
+            overflow: hidden;
+            transition: all 0.8s ease;
+        }
+        
+        .textup {
+            padding-top: 250px;
+            transition-duration: 0.8s;
+        }
+        
+        .txup:hover .textup {
+            padding-top: 0;
+        }
+        
+        .txup:hover h2 {
+            color: #105CAA;
+        }
+        
+        .follow {
+            color: #105CAA !important;
+            font-size: 22px;
+            font-weight: 900 !important;
+            border: 2px solid #105caa;
+            font-size: 21px;
+            padding: 0px 10px 4px 6px;
+            border-radius: 50%;
+            transform: rotate(20deg);
+            display: inline-block;
+        }
+        
+        .product-read-more {
+            display: none;
+            transition-duration: 0.8s;
+        }
+        
+        .product-read-more-sec:hover .product-read-more {
+            display: block;
+            transition-duration: 0.8s;
+        }
+        
+        /* Elementor-style animations */
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .elementor-invisible {
+            opacity: 0;
+        }
+        
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        
+        .animate-slideInRight {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        
+        .animate-fadeInDown {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        /* Original color scheme */
+        .primary-blue { color: #105CAA; }
+        .primary-orange { color: #F69320; }
+        .bg-primary-blue { background-color: #105CAA; }
+        .bg-primary-orange { background-color: #F69320; }
+        
+        /* Button styles matching original */
+        .elementor-button {
+            background-color: #F69320;
+            color: white;
+            padding: 10px 23px;
+            border-radius: 50px;
+            border: none;
+            font-family: "Inter", Sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .elementor-button:hover {
+            background: #005d8c;
+            color: white;
+        }
+        
+        /* Mobile menu */
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Top Bar - Matching original design with primary-blue background -->
+    <div class="bg-primary-blue py-2 px-4">
+        <div class="container mx-auto flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <a href="mailto:konamiplastengineering@gmail.com" class="flex items-center text-white hover:text-gray-200 transition">
+                    <i class="fas fa-envelope mr-2"></i>
+                    konamiplastengineering@gmail.com
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+919574952777" class="flex items-center text-white hover:text-gray-200 transition">
+                    <i class="fas fa-phone mr-2"></i>
+                    +91 95749 52777
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header - Matching original structure -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-4">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(to right, #105CAA, #1e40af); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; flex-shrink: 0;">
+                            KPE
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-3xl font-bold text-gray-800 leading-tight">
+                                Konami
+                            </div>
+                            <div class="text-xl font-semibold primary-blue leading-tight">
+                                Plast Engineering
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8 flex-1 justify-end mr-24">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Home</a>
+                    <a href="aboutUs.html" class="text-gray-700 hover:text-primary-blue font-medium transition">About Us</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-blue font-medium transition flex items-center">
+                            Products &amp; Solutions <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50" style="left: 0; right: auto;">
+                            <div class="py-2">
+                                <div class="relative group/submenu">
+                                    <a href="#" class="block px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 flex items-center justify-between">
+                                        Cables <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-0 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 z-50" style="left: 100%; right: auto;">
+                                        <a href="flat-submersible-cable.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Flat Submersible Cables</a>
+                                        <a href="pvc-house-wires.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC House Wires</a>
+                                        <a href="multicore-round-cables.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Multicore Round Cables</a>
+                                    </div>
+                                </div>
+                                <div class="relative group/submenu">
+                                    <a href="#" class="block px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 flex items-center justify-between">
+                                        Pipes <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-0 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 z-50" style="left: 100%; right: auto;">
+                                        <a href="garden-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Garden Hose</a>
+                                        <a href="braided-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Braided Hose</a>
+                                        <a href="sink-waste-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Sink Waste Pipes</a>
+                                        <a href="inlet-outlet-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Inlet / Outlet Pipes</a>
+                                        <a href="pvc-casing-pipe.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Casing Pipe</a>
+                                        <a href="pvc-rigid-pipe.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Rigid Pipe</a>
+                                        <a href="pvc-sleeves.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Sleeves</a>
+                                        <a href="hdpe-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">HDPE Pipes</a>
+                                        <a href="krishi-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Krishi Hose</a>
+                                        <a href="suction-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Suction Hose</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Blogs</a>
+                    <a href="contacts.html" class="elementor-button">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-80 h-full bg-white shadow-2xl z-50 lg:hidden">
+            <div class="p-4">
+                <button id="closeMobileMenu" class="text-gray-700 mb-8">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium">Home</a>
+                    <a href="aboutUs.html" class="text-gray-700 hover:text-primary-blue font-medium">About Us</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary-blue font-medium">Products & Solutions</a>
+                    <a href="distributor-inquiry.html" class="text-gray-700 hover:text-primary-blue font-medium">Distributor Enquiry</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-primary-blue font-medium">Careers</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary-blue font-medium">Blogs</a>
+                    <a href="contacts.html" class="text-gray-700 hover:text-primary-blue font-medium">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inlet / Outlet Pipes Header Section -->
+    <div class="relative bg-cover bg-center bg-no-repeat py-16" style="background-image: url('uploads/image_13.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative container mx-auto px-4 flex items-center justify-center py-16">
+            <div class="text-center w-full">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mx-auto">Inlet / Outlet Pipes</h2>
+                <h1 class="text-xl md:text-2xl text-white mt-4">Home &nbsp;&nbsp;&gt;&nbsp;&nbsp; Products & Solutions &nbsp;&nbsp;&gt;&nbsp;&nbsp; Inlet / Outlet Pipes</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inlet / Outlet Pipes Content Section -->
+    <div class="bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <!-- Product Overview -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 border-l-4 border-green-500">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <img src="https://saveraind.com/wp-content/uploads/2025/03/inletpipe2-1.png" alt="Inlet / Outlet Pipes" class="w-full max-w-md mx-auto rounded-lg shadow-lg">
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold text-gray-900 mb-4">Inlet / Outlet Pipes</h2>
+                            <p class="text-gray-600 text-lg mb-6">Inlet/Outlet pipes are crucial components in various systems, responsible for managing the flow of liquids or gases. Professionally designed, these pipes are essential for use in washing machines.</p>
+                            
+                            <div class="text-center">
+                                <a href="/savera/contact" class="inline-block bg-gradient-to-r from-green-500 to-emerald-500 text-white px-8 py-3 rounded-full font-semibold hover:from-green-600 hover:to-emerald-600 transition-all transform hover:scale-105 shadow-lg">
+                                    Enquire Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Information -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 border-l-4 border-emerald-500">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Product information</h3>
+                    
+                    <!-- Tabs -->
+                    <div class="border-b border-gray-200 mb-6">
+                        <nav class="-mb-px flex space-x-8" aria-label="Tabs">
+                            <button onclick="showTab('features')" id="features-tab" class="tab-btn border-b-2 border-green-500 text-green-600 py-2 px-1 text-sm font-medium">
+                                Features
+                            </button>
+                            <button onclick="showTab('colours')" id="colours-tab" class="tab-btn border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-2 px-1 text-sm font-medium">
+                                Available Colours
+                            </button>
+                            <button onclick="showTab('sizes')" id="sizes-tab" class="tab-btn border-b-2 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 py-2 px-1 text-sm font-medium">
+                                Available Sizes
+                            </button>
+                        </nav>
+                    </div>
+                    
+                    <!-- Tab Content -->
+                    <div id="features-content" class="tab-content">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Enhanced Flexibility</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Resistant Cut, Abrasion & Strain</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div id="colours-content" class="tab-content hidden">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-8 h-8 bg-gray-100 border border-gray-300 rounded-full"></div>
+                            <span class="text-gray-700">White</span>
+                            <div class="w-8 h-8 bg-gray-800 rounded-full"></div>
+                            <span class="text-gray-700">Black</span>
+                            <div class="w-8 h-8 bg-gray-400 rounded-full"></div>
+                            <span class="text-gray-700">Grey</span>
+                        </div>
+                    </div>
+                    
+                    <div id="sizes-content" class="tab-content hidden">
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full border-collapse border border-gray-300">
+                                <thead>
+                                    <tr class="bg-gray-50">
+                                        <th class="border border-gray-300 px-4 py-2 text-left">Size in MM</th>
+                                        <th class="border border-gray-300 px-4 py-2 text-left">Size in Inches</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="border border-gray-300 px-4 py-2">16</td>
+                                        <td class="border border-gray-300 px-4 py-2">0.5</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="border border-gray-300 px-4 py-2">20</td>
+                                        <td class="border border-gray-300 px-4 py-2">0.75</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 px-4 py-2">25</td>
+                                        <td class="border border-gray-300 px-4 py-2">1</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="border border-gray-300 px-4 py-2">32</td>
+                                        <td class="border border-gray-300 px-4 py-2">1.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 px-4 py-2">40</td>
+                                        <td class="border border-gray-300 px-4 py-2">1.5</td>
+                                    </tr>
+                                    <tr class="bg-gray-50">
+                                        <td class="border border-gray-300 px-4 py-2">50</td>
+                                        <td class="border border-gray-300 px-4 py-2">2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Products -->
+                <div class="bg-white rounded-2xl shadow-xl p-8 mb-8 border-l-4 border-teal-500">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">Other Products</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Product 1 -->
+                        <div class="text-center group">
+                            <div class="mb-6 overflow-hidden rounded-lg inline-block">
+                                <img src="https://saveraind.com/wp-content/uploads/2025/03/reinforcedhose2-1.png" alt="Steel Wire Reinforced Hose" class="w-64 h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                                <a href="https://saveraind.com/steel-wire-reinforced-hose/" class="hover:text-green-600 transition">Steel Wire Reinforced Hose</a>
+                            </h4>
+                        </div>
+                        
+                        <!-- Product 2 -->
+                        <div class="text-center group">
+                            <div class="mb-6 overflow-hidden rounded-lg inline-block">
+                                <img src="https://saveraind.com/wp-content/uploads/elementor/thumbs/Drainage-Pipe1-scaled-r52q0ousa1tyknny6fv2v17ik4c32j2q3jm9m2zbwu.webp" alt="SWR Pipes" class="w-64 h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                                <a href="https://saveraind.com/swr-pipes/" class="hover:text-green-600 transition">SWR Pipes</a>
+                            </h4>
+                        </div>
+                        
+                        <!-- Product 3 -->
+                        <div class="text-center group">
+                            <div class="mb-6 overflow-hidden rounded-lg inline-block">
+                                <img src="https://saveraind.com/wp-content/uploads/2025/03/suctionpipe2-1.png" alt="PVC Suction Hose" class="w-64 h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                                <a href="https://saveraind.com/suction-hose/" class="hover:text-green-600 transition">PVC Suction Hose</a>
+                            </h4>
+                        </div>
+                        
+                        <!-- Product 4 -->
+                        <div class="text-center group">
+                            <div class="mb-6 overflow-hidden rounded-lg inline-block">
+                                <img src="https://saveraind.com/wp-content/uploads/2025/03/gardenhose2-1.png" alt="PVC Garden Hose" class="w-64 h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                            </div>
+                            <h4 class="text-xl font-semibold text-gray-800 mb-3">
+                                <a href="https://saveraind.com/garden-hose/" class="hover:text-green-600 transition">PVC Garden Hose</a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(to right, #105CAA, #1e40af); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; flex-shrink: 0;">
+                            KPE
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-3xl font-bold text-white leading-tight">
+                                Konami
+                            </div>
+                            <div class="text-xl font-semibold text-blue-300 leading-tight">
+                                Plast Engineering
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        Leading manufacturer of high-quality PVC pipes, cables, and plumbing solutions for industrial and residential applications.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-300 hover:text-white transition">Home</a></li>
+                        <li><a href="aboutUs.html" class="text-gray-300 hover:text-white transition">About Us</a></li>
+                        <li><a href="#products" class="text-gray-300 hover:text-white transition">Products</a></li>
+                        <li><a href="careers.html" class="text-gray-300 hover:text-white transition">Careers</a></li>
+                        <li><a href="blog.html" class="text-gray-300 hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-6">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="garden-hose.html" class="text-gray-300 hover:text-white transition">Garden Hose</a></li>
+                        <li><a href="braided-hose.html" class="text-gray-300 hover:text-white transition">Braided Hose</a></li>
+                        <li><a href="sink-waste-pipes.html" class="text-gray-300 hover:text-white transition">Sink Waste Pipes</a></li>
+                        <li><a href="pvc-house-wires.html" class="text-gray-300 hover:text-white transition">PVC House Wires</a></li>
+                        <li><a href="flat-submersible-cable.html" class="text-gray-300 hover:text-white transition">Submersible Cables</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-6">Contact Info</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-400 mt-1 mr-3"></i>
+                            <span class="text-gray-300">72, Adarsh Industrial Estate, Chhatral, Gandhinagar, Gujarat, 382729</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-blue-400 mr-3"></i>
+                            <span class="text-gray-300">+91 95749 52777</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-3"></i>
+                            <span class="text-gray-300">konamiplastengineering@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Konami Plast Engineering. Designed by Jani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Tab functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            const allContents = document.querySelectorAll('.tab-content');
+            allContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+            
+            // Remove active state from all tabs
+            const allTabs = document.querySelectorAll('.tab-btn');
+            allTabs.forEach(tab => {
+                tab.classList.remove('border-green-500', 'text-green-600');
+                tab.classList.add('border-transparent', 'text-gray-500');
+            });
+            
+            // Show selected tab content
+            document.getElementById(tabName + '-content').classList.remove('hidden');
+            
+            // Add active state to selected tab
+            const activeTab = document.getElementById(tabName + '-tab');
+            activeTab.classList.remove('border-transparent', 'text-gray-500');
+            activeTab.classList.add('border-green-500', 'text-green-600');
+        }
+    </script>
+</body>
+</html>

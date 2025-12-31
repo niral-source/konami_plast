@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Konami Plast Engineering</title>
+    <meta name="description" content="Learn about Konami Plast Engineering - Leading manufacturer of high-quality PVC pipes and engineering solutions for industrial and agricultural applications.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Match original design styles */
+        .txup {
+            height: 336px;
+            overflow: hidden;
+            transition: all 0.8s ease;
+        }
+        
+        .textup {
+            padding-top: 250px;
+            transition-duration: 0.8s;
+        }
+        
+        .txup:hover .textup {
+            padding-top: 0;
+        }
+        
+        .txup:hover h2 {
+            color: #105CAA;
+        }
+        
+        .follow {
+            color: #105CAA !important;
+            font-size: 22px;
+            font-weight: 900 !important;
+            border: 2px solid #105caa;
+            font-size: 21px;
+            padding: 0px 10px 4px 6px;
+            border-radius: 50%;
+            transform: rotate(20deg);
+            display: inline-block;
+        }
+        
+        .product-read-more {
+            display: none;
+            transition-duration: 0.8s;
+        }
+        
+        .product-read-more-sec:hover .product-read-more {
+            display: block;
+            transition-duration: 0.8s;
+        }
+        
+        /* Elementor-style animations */
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .elementor-invisible {
+            opacity: 0;
+        }
+        
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        
+        .animate-slideInRight {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        
+        .animate-fadeInDown {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        /* Original color scheme */
+        .primary-blue { color: #105CAA; }
+        .primary-orange { color: #F69320; }
+        .bg-primary-blue { background-color: #105CAA; }
+        .bg-primary-orange { background-color: #F69320; }
+        
+        /* Button styles matching original */
+        .elementor-button {
+            background-color: #F69320;
+            color: white;
+            padding: 10px 23px;
+            border-radius: 50px;
+            border: none;
+            font-family: "Inter", Sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .elementor-button:hover {
+            background: #005d8c;
+            color: white;
+        }
+        
+        /* Logo fix */
+        .border-3 {
+            border-width: 3px;
+        }
+        
+        /* Mobile menu */
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Top Bar - Matching original design with primary-blue background -->
+    <div class="bg-primary-blue py-2 px-4">
+        <div class="container mx-auto flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <a href="mailto:konamiplastengineering@gmail.com" class="flex items-center text-white hover:text-gray-200 transition">
+                    <i class="fas fa-envelope mr-2"></i>
+                    konamiplastengineering@gmail.com
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+919574952777" class="flex items-center text-white hover:text-gray-200 transition">
+                    <i class="fas fa-phone mr-2"></i>
+                    +91 95749 52777
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header - Matching original structure -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-4">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(to right, #105CAA, #1e40af); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; flex-shrink: 0;">
+                            KPE
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-3xl font-bold text-gray-800 leading-tight">
+                                Konami
+                            </div>
+                            <div class="text-xl font-semibold primary-blue leading-tight">
+                                Plast Engineering
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8 flex-1 justify-end mr-24">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Home</a>
+                    <a href="aboutUs.html" class="text-gray-700 hover:text-primary-blue font-medium transition">About Us</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-blue font-medium transition flex items-center">
+                            Products &amp; Solutions <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50" style="left: 0; right: auto;">
+                            <div class="py-2">
+                                <div class="relative group/submenu">
+                                    <a href="#" class="block px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 flex items-center justify-between">
+                                        Cables <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-0 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 z-50" style="left: 100%; right: auto;">
+                                        <a href="flat-submersible-cable.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Flat Submersible Cables</a>
+                                        <a href="pvc-house-wires.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC House Wires</a>
+                                        <a href="multicore-round-cables.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Multicore Round Cables</a>
+                                    </div>
+                                </div>
+                                <div class="relative group/submenu">
+                                    <a href="#" class="block px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 flex items-center justify-between">
+                                        Pipes <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-0 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 z-50" style="left: 100%; right: auto;">
+                                        <a href="garden-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Garden Hose</a>
+                                        <a href="braided-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Braided Hose</a>
+                                        <a href="sink-waste-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Sink Waste Pipes</a>
+                                        <a href="inlet-outlet-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Inlet / Outlet Pipes</a>
+                                        <a href="pvc-casing-pipe.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Casing Pipe</a>
+                                        <a href="pvc-rigid-pipe.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Rigid Pipe</a>
+                                        <a href="pvc-sleeves.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Sleeves</a>
+                                        <a href="hdpe-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">HDPE Pipes</a>
+                                        <a href="krishi-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Krishi Hose</a>
+                                        <a href="suction-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Suction Hose</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Blogs</a>
+                    <a href="contacts.html" class="elementor-button">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-80 h-full bg-white shadow-2xl z-50 lg:hidden">
+            <div class="p-4">
+                <button id="closeMobileMenu" class="text-gray-700 mb-8">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium">Home</a>
+                    <a href="aboutUs.html" class="text-gray-700 hover:text-primary-blue font-medium">About Us</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary-blue font-medium">Products & Solutions</a>
+                    <a href="distributor-inquiry.html" class="text-gray-700 hover:text-primary-blue font-medium">Distributor Enquiry</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-primary-blue font-medium">Careers</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary-blue font-medium">Blogs</a>
+                    <a href="contacts.html" class="text-gray-700 hover:text-primary-blue font-medium">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Header Section -->
+    <div class="relative bg-cover bg-center bg-no-repeat py-16" style="background-image: url('uploads/image_13.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative container mx-auto px-4 flex items-center justify-center py-16">
+            <div class="text-center w-full">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mx-auto">Contact Us</h2>
+                <h1 class="text-xl md:text-2xl text-white mt-4">Home &nbsp;&nbsp;&gt;&nbsp;&nbsp; Contact Us</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Content Section -->
+    <div class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-8">
+                
+                <!-- Address (Balanced Design) -->
+                <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg p-5 border border-gray-100">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-4 shadow-md">
+                            <i class="fas fa-map-marked-alt text-white text-lg"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-900">Contact Information</h2>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="group bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-blue-200">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-gradient-to-r from-blue-100 to-blue-200 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-gray-900 font-semibold mb-1 group-hover:text-blue-600 transition-colors">Office Address</h3>
+                                    <p class="text-gray-600 leading-relaxed">72, Adarsh Industrial Estate, Chhatral, Gandhinagar, Gujarat, 382729</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="group bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-blue-200">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gradient-to-r from-green-100 to-green-200 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-phone text-green-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-gray-900 font-semibold mb-1 group-hover:text-green-600 transition-colors">Phone Number</h3>
+                                    <p class="text-gray-600">+91 95749 52777</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="group bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 hover:border-blue-200">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 bg-gradient-to-r from-purple-100 to-purple-200 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-purple-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="text-gray-900 font-semibold mb-1 group-hover:text-purple-600 transition-colors">Email Address</h3>
+                                    <p class="text-gray-600">konamiplastengineering@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Business Hours -->
+                    <div class="mt-8 p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg border border-gray-200">
+                        <div class="flex items-center mb-3">
+                            <div class="w-8 h-8 bg-gradient-to-r from-orange-400 to-orange-500 rounded-lg flex items-center justify-center mr-3">
+                                <i class="fas fa-clock text-white text-sm"></i>
+                            </div>
+                            <h3 class="text-gray-900 font-semibold">Business Hours</h3>
+                        </div>
+                        <div class="space-y-1 text-gray-600 text-sm ml-11">
+                            <p class="flex justify-between"><span>Monday - Friday:</span><span class="font-medium">9:00 AM - 6:00 PM</span></p>
+                            <p class="flex justify-between"><span>Saturday:</span><span class="font-medium">9:00 AM - 2:00 PM</span></p>
+                            <p class="flex justify-between"><span>Sunday:</span><span class="font-medium text-red-500">Closed</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form (Balanced Design) -->
+                <div class="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-lg p-5 border border-gray-100">
+                    <div class="flex items-center mb-5">
+                        <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-4 shadow-md">
+                            <i class="fas fa-paper-plane text-white text-lg"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-gray-900">Contact Us</h2>
+                    </div>
+                    <p class="text-gray-600 mb-5">Looking for residential, agriculture & industrial pipes. We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    
+                    <!-- Social Media Links -->
+                    <div class="flex justify-center space-x-3 mb-5">
+                        <a href="https://www.facebook.com/people/Saverapipes/100089085159343/" class="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center hover:from-blue-600 hover:to-blue-700 transform hover:scale-110 transition-all duration-300 shadow-md">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="https://x.com/saverapipes" class="w-12 h-12 bg-gradient-to-r from-sky-400 to-sky-500 rounded-full flex items-center justify-center hover:from-sky-500 hover:to-sky-600 transform hover:scale-110 transition-all duration-300 shadow-md">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/saverapipes/" class="w-12 h-12 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full flex items-center justify-center hover:from-blue-700 hover:to-blue-800 transform hover:scale-110 transition-all duration-300 shadow-md">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/saverapipes/" class="w-12 h-12 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center hover:from-pink-600 hover:to-pink-700 transform hover:scale-110 transition-all duration-300 shadow-md">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+
+                    <!-- Balanced Contact Form -->
+                    <form class="space-y-5">
+                        <div class="group">
+                            <label class="block text-gray-700 font-medium mb-2 group-hover:text-blue-600 transition-colors">Your Name *</label>
+                            <div class="relative">
+                                <input type="text" class="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white transition-all duration-300" required>
+                                <div class="absolute left-4 top-3.5 text-gray-400 group-focus-within:text-blue-500 transition-colors">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="group">
+                            <label class="block text-gray-700 font-medium mb-2 group-hover:text-blue-600 transition-colors">Your Email *</label>
+                            <div class="relative">
+                                <input type="email" class="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white transition-all duration-300" required>
+                                <div class="absolute left-4 top-3.5 text-gray-400 group-focus-within:text-blue-500 transition-colors">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="group">
+                            <label class="block text-gray-700 font-medium mb-2 group-hover:text-blue-600 transition-colors">Your Phone</label>
+                            <div class="relative">
+                                <input type="tel" class="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white transition-all duration-300">
+                                <div class="absolute left-4 top-3.5 text-gray-400 group-focus-within:text-blue-500 transition-colors">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="group">
+                            <label class="block text-gray-700 font-medium mb-2 group-hover:text-blue-600 transition-colors">Your Message *</label>
+                            <div class="relative">
+                                <textarea rows="4" class="w-full px-4 py-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white resize-none transition-all duration-300" required></textarea>
+                                <div class="absolute left-4 top-3.5 text-gray-400 group-focus-within:text-blue-500 transition-colors">
+                                    <i class="fas fa-comment-dots"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transform hover:scale-105 transition-all duration-300 font-semibold shadow-md flex items-center justify-center group">
+                            <span>Send Message</span>
+                            <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform duration-300"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Map Section -->
+            <div class="mt-12">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="h-96 bg-gray-200">
+                        <!-- Google Map Embed -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.1234567890!2d72.1234567890!3d23.1234567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sKonami%20Plast%20Engineering!5e0!3m2!1sen!2sin!4v1234567890"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            class="w-full h-full">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(to right, #105CAA, #1e40af); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; flex-shrink: 0;">
+                            KPE
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-3xl font-bold text-white leading-tight">
+                                Konami
+                            </div>
+                            <div class="text-xl font-semibold text-blue-300 leading-tight">
+                                Plast Engineering
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Leading manufacturer of high-quality engineering solutions and PVC pipes for industrial and agricultural applications.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="aboutUs.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="garden-hose.html" class="text-gray-400 hover:text-white transition">Garden Hose</a></li>
+                        <li><a href="hdpe-pipes.html" class="text-gray-400 hover:text-white transition">HDPE Pipes</a></li>
+                        <li><a href="pvc-rigid-pipe.html" class="text-gray-400 hover:text-white transition">PVC Rigid Pipe</a></li>
+                        <li><a href="suction-hose.html" class="text-gray-400 hover:text-white transition">Suction Hose</a></li>
+                        <li><a href="flat-submersible-cable.html" class="text-gray-400 hover:text-white transition">Submersible Cables</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            <span>72, Adarsh Industrial Estate, Chhatral, Gandhinagar, Gujarat, 382729</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+91 95749 52777</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>konamiplastengineering@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Konami Plast Engineering. Designed by Jani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Hero Slider - Matching original functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.qodef-e.swiper-slide');
+        const totalSlides = slides.length;
+        const slider = document.getElementById('heroSlider');
+        
+        // Create pagination bullets dynamically
+        const paginationContainer = document.querySelector('.swiper-pagination');
+        paginationContainer.innerHTML = '';
+        
+        for (let i = 0; i < totalSlides; i++) {
+            const bullet = document.createElement('div');
+            bullet.className = 'swiper-pagination-bullet';
+            if (i === 0) bullet.classList.add('active');
+            bullet.addEventListener('click', () => {
+                currentSlide = i;
+                showSlide(currentSlide);
+            });
+            paginationContainer.appendChild(bullet);
+        }
+        
+        function showSlide(index) {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Update pagination
+            const bullets = document.querySelectorAll('.swiper-pagination-bullet');
+            bullets.forEach((bullet, i) => {
+                bullet.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        document.querySelector('.swiper-button-next').addEventListener('click', nextSlide);
+        document.querySelector('.swiper-button-prev').addEventListener('click', prevSlide);
+
+        // Auto-play slider - matching original speed
+        setInterval(nextSlide, 5000);
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(() => animateCounters(), 10);
+                } else {
+                    counter.innerText = target + '+';
+                }
+            });
+        };
+
+        // Trigger counter animation when in viewport
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const counterSection = document.querySelector('.counter').parentElement.parentElement;
+        if (counterSection) {
+            observer.observe(counterSection);
+        }
+
+        // Tab Functionality
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                
+                // Update button styles
+                tabBtns.forEach(b => {
+                    b.classList.remove('bg-blue-600', 'text-white');
+                    b.classList.add('text-gray-600');
+                });
+                btn.classList.remove('text-gray-600');
+                btn.classList.add('bg-blue-600', 'text-white');
+                
+                // Show/hide content
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+                document.getElementById(tabId).classList.remove('hidden');
+            });
+        });
+
+        // Trigger animations on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.elementor-invisible');
+            
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    element.classList.remove('elementor-invisible');
+                    
+                    // Add appropriate animation class
+                    if (element.classList.contains('animate-slideInLeft')) {
+                        element.style.animation = 'slideInLeft 0.8s ease-out forwards';
+                    } else if (element.classList.contains('animate-slideInRight')) {
+                        element.style.animation = 'slideInRight 0.8s ease-out forwards';
+                    } else if (element.classList.contains('animate-fadeInDown')) {
+                        element.style.animation = 'fadeInDown 0.8s ease-out forwards';
+                    } else if (element.classList.contains('animate-fadeInUp')) {
+                        element.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konami Plast Engineering - PVC, UPVC & CPVC Pipe Manufacturer</title>
+    <meta name="description" content="Konami Plast Engineering is a leading manufacturer of high-quality PVC pipes and engineering solutions. Explore our wide range of products for industrial, agricultural, and plumbing needs.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Match original design styles */
+        .txup {
+            height: 336px;
+            overflow: hidden;
+            transition: all 0.8s ease;
+        }
+        
+        .textup {
+            padding-top: 250px;
+            transition-duration: 0.8s;
+        }
+        
+        .txup:hover .textup {
+            padding-top: 0;
+        }
+        
+        .txup:hover h2 {
+            color: #105CAA;
+        }
+        
+        .follow {
+            color: #105CAA !important;
+            font-size: 22px;
+            font-weight: 900 !important;
+            border: 2px solid #105caa;
+            font-size: 21px;
+            padding: 0px 10px 4px 6px;
+            border-radius: 50%;
+            transform: rotate(20deg);
+            display: inline-block;
+        }
+        
+        .product-read-more {
+            display: none;
+            transition-duration: 0.8s;
+        }
+        
+        .product-read-more-sec:hover .product-read-more {
+            display: block;
+            transition-duration: 0.8s;
+        }
+        
+        /* Elementor-style animations */
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .elementor-invisible {
+            opacity: 0;
+        }
+        
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        
+        .animate-slideInRight {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        
+        .animate-fadeInDown {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        /* Original color scheme */
+        .primary-blue { color: #105CAA; }
+        .primary-orange { color: #F69320; }
+        .bg-primary-blue { background-color: #105CAA; }
+        .bg-primary-orange { background-color: #F69320; }
+        
+        /* Button styles matching original */
+        .elementor-button {
+            background-color: #F69320;
+            color: white;
+            padding: 10px 23px;
+            border-radius: 50px;
+            border: none;
+            font-family: "Inter", Sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .elementor-button:hover {
+            background: #005d8c;
+            color: white;
+        }
+        
+        /* Swiper styles - Matching original exactly */
+        .qodef-qi-image-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .swiper-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .qodef-e.swiper-slide {
+            flex: 0 0 100%;
+        }
+        
+        .qodef-e-inner {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .qodef-e-inner-holder {
+            position: relative;
+            display: block;
+        }
+        
+        .swiper-button-prev,
+        .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.9);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .swiper-button-prev:hover,
+        .swiper-button-next:hover {
+            background: white;
+            border-color: #105CAA;
+        }
+        
+        .swiper-button-prev {
+            left: 20px;
+        }
+        
+        .swiper-button-next {
+            right: 20px;
+        }
+        
+        .swiper-button-prev i,
+        .swiper-button-next i {
+            font-size: 18px;
+            color: #105CAA;
+        }
+        
+        .swiper-pagination {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+        
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .swiper-pagination-bullet.active {
+            background: white;
+            border-color: #105CAA;
+        }
+        
+        /* Logo fix */
+        .border-3 {
+            border-width: 3px;
+        }
+        
+        /* Mobile menu */
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Top Bar - Matching original design with primary-blue background -->
+    <div class="bg-primary-blue py-2 px-4">
+        <div class="container mx-auto flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <a href="mailto:konamiplastengineering@gmail.com" class="flex items-center text-white hover:text-gray-200 transition">
+                    <i class="fas fa-envelope mr-2"></i>
+                    konamiplastengineering@gmail.com
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+919574952777" class="flex items-center text-white hover:text-gray-200 transition">
+                    <i class="fas fa-phone mr-2"></i>
+                    +91 95749 52777
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header - Matching original structure -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-4">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(to right, #105CAA, #1e40af); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; flex-shrink: 0;">
+                            KPE
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-3xl font-bold text-gray-800 leading-tight">
+                                Konami
+                            </div>
+                            <div class="text-xl font-semibold primary-blue leading-tight">
+                                Plast Engineering
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8 flex-1 justify-end mr-24">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Home</a>
+                    <a href="aboutUs.html" class="text-gray-700 hover:text-primary-blue font-medium transition">About Us</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-blue font-medium transition flex items-center">
+                            Products &amp; Solutions <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50" style="left: 0; right: auto;">
+                            <div class="py-2">
+                                <div class="relative group/submenu">
+                                    <a href="#" class="block px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 flex items-center justify-between">
+                                        Cables <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-0 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 z-50" style="left: 100%; right: auto;">
+                                        <a href="flat-submersible-cable.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Flat Submersible Cables</a>
+                                        <a href="pvc-house-wires.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC House Wires</a>
+                                        <a href="multicore-round-cables.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Multicore Round Cables</a>
+                                    </div>
+                                </div>
+                                <div class="relative group/submenu">
+                                    <a href="#" class="block px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 flex items-center justify-between">
+                                        Pipes <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-0 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 z-50" style="left: 100%; right: auto;">
+                                        <a href="garden-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Garden Hose</a>
+                                        <a href="braided-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Braided Hose</a>
+                                        <a href="sink-waste-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Sink Waste Pipes</a>
+                                        <a href="inlet-outlet-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Inlet / Outlet Pipes</a>
+                                        <a href="pvc-casing-pipe.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Casing Pipe</a>
+                                        <a href="pvc-rigid-pipe.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Rigid Pipe</a>
+                                        <a href="pvc-sleeves.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Sleeves</a>
+                                        <a href="hdpe-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">HDPE Pipes</a>
+                                        <a href="krishi-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Krishi Hose</a>
+                                        <a href="suction-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Suction Hose</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Blogs</a>
+                    <a href="contacts.html" class="elementor-button">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-80 h-full bg-white shadow-2xl z-50 lg:hidden">
+            <div class="p-4">
+                <button id="closeMobileMenu" class="text-gray-700 mb-8">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium">Home</a>
+                    <a href="aboutUs.html" class="text-gray-700 hover:text-primary-blue font-medium">About Us</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary-blue font-medium">Products & Solutions</a>
+                    <a href="distributor-inquiry.html" class="text-gray-700 hover:text-primary-blue font-medium">Distributor Enquiry</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-primary-blue font-medium">Careers</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary-blue font-medium">Blogs</a>
+                    <a href="contacts.html" class="text-gray-700 hover:text-primary-blue font-medium">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider - Matching original structure exactly -->
+    <section id="home" class="relative">
+        <div class="qodef-shortcode qodef-m qodef-qi-image-slider qodef-col-num--1 qodef-qi-grid qodef-qi-swiper-container qodef-navigation--inside qodef-pagination--inside qodef-navigation--hover-move">
+            <div class="swiper-wrapper" id="heroSlider">
+                <div class="qodef-e swiper-slide">
+                    <div class="qodef-e-inner">
+                        <div class="qodef-e-inner-holder">
+                            <img src="uploads/image_13.jpg" class="w-full h-[600px] object-cover" alt="Konami Banner 01">
+                        </div>
+                    </div>
+                </div>
+                <div class="qodef-e swiper-slide">
+                    <div class="qodef-e-inner">
+                        <div class="qodef-e-inner-holder">
+                            <img src="uploads/image_14.jpg" class="w-full h-[600px] object-cover" alt="Konami Banner 02">
+                        </div>
+                    </div>
+                </div>
+                <div class="qodef-e swiper-slide">
+                    <div class="qodef-e-inner">
+                        <div class="qodef-e-inner-holder">
+                            <img src="uploads/image_10.jpg" class="w-full h-[600px] object-cover" alt="Konami Banner 03">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Controls - Matching original -->
+            <div class="swiper-button-prev">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- About Section - Matching original layout -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+                <div class="elementor-invisible animate-slideInLeft">
+                    <img src="uploads/image_6.png" alt="Manufacturing Facility" class="rounded-2xl shadow-lg w-full">
+                </div>
+                <div class="elementor-invisible animate-slideInRight">
+                    <h5 class="primary-blue font-semibold text-lg mb-4">ABOUT US</h5>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Introduction</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-justify">
+                        Konami Plast Engineering has a rather grounding history, beginning with the family starting from two machines, producing garden hoses. We have now expanded to three plants producing piping and electrical wiring solutions.
+                    </p>
+                    <a href="about.html" class="elementor-button">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section - Superb & Elegant Design -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h1 class="elementor-invisible animate-fadeInDown text-5xl font-bold text-gray-800 mb-6">Our Products</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover our comprehensive range of high-quality engineering solutions designed to meet your specific needs</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Left side - Featured Product with Elegant Design -->
+                <div class="relative group h-full">
+                    <div class="absolute inset-0 bg-gradient-to-r from-primary-blue to-blue-600 rounded-3xl transform rotate-1 group-hover:rotate-2 transition-all duration-500"></div>
+                    <div class="relative bg-white rounded-3xl shadow-2xl overflow-hidden h-full flex flex-col">
+                        <div class="h-56 overflow-hidden">
+                            <img src="uploads/image_11.jpg" alt="Structural Integrity Assessment" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-all duration-700">
+                        </div>
+                        <div class="p-8 flex-1 flex flex-col">
+                            <div class="flex items-center justify-between mb-4">
+                                <div class="inline-block px-4 py-2 bg-primary-blue/10 rounded-full">
+                                    <span class="text-primary-blue font-semibold text-sm">FEATURED</span>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">PREMIUM</span>
+                                    <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">CERTIFIED</span>
+                                </div>
+                            </div>
+                            <h2 class="text-3xl font-bold text-gray-800 mb-4">Structural Integrity Assessment</h2>
+                            <p class="text-gray-600 mb-6 text-lg leading-relaxed">Ensuring structural safety and longevity with our premium quality engineering solutions that exceed industry standards and deliver exceptional performance.</p>
+                            
+                            <div class="grid grid-cols-3 gap-4 mb-6">
+                                <div class="text-center p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-2xl font-bold text-primary-blue">100%</div>
+                                    <div class="text-xs text-gray-600">Quality</div>
+                                </div>
+                                <div class="text-center p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-2xl font-bold text-primary-blue">24/7</div>
+                                    <div class="text-xs text-gray-600">Support</div>
+                                </div>
+                                <div class="text-center p-3 bg-gray-50 rounded-lg">
+                                    <div class="text-2xl font-bold text-primary-blue">10+</div>
+                                    <div class="text-xs text-gray-600">Years</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-auto">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center mr-2">
+                                            <i class="fas fa-check text-white text-xs"></i>
+                                        </div>
+                                        <span class="text-sm text-gray-600">ISO Certified</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-2">
+                                            <i class="fas fa-shield-alt text-white text-xs"></i>
+                                        </div>
+                                        <span class="text-sm text-gray-600">Warranty</span>
+                                    </div>
+                                </div>
+                                <div class="mt-6">
+                                    <a href="#about" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-medium rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300 hover:from-blue-700 hover:to-blue-800">
+                                        Explore More
+                                        <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right side - Product Grid with Elegant Cards -->
+                <div class="grid md:grid-cols-2 gap-8 content-start h-full">
+                    <!-- Household -->
+                    <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        <div class="h-32 overflow-hidden relative">
+                            <img src="uploads/image_7.png" alt="Household Products" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-all duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-home text-primary-blue"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800">Household</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">Perfect choice for electricity, water and gas transmission for household uses.</p>
+                            <a href="#household" class="inline-flex items-center text-primary-blue font-semibold hover:text-blue-700 transition-colors">
+                                Learn More <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Industrial -->
+                    <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        <div class="h-32 overflow-hidden relative">
+                            <img src="uploads/image_8.png" alt="Industrial Products" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-all duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-industry text-orange-600"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800">Industrial</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">High-quality pipes for oil and gas, machineries and water transport industries.</p>
+                            <a href="#industrial" class="inline-flex items-center text-primary-blue font-semibold hover:text-blue-700 transition-colors">
+                                Learn More <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Agriculture -->
+                    <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        <div class="h-32 overflow-hidden relative">
+                            <img src="uploads/image_9.png" alt="Agriculture Products" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-all duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-seedling text-green-600"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800">Agriculture</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">Supporting agriculture with reliable pipes that work under pressure.</p>
+                            <a href="#agriculture" class="inline-flex items-center text-primary-blue font-semibold hover:text-blue-700 transition-colors">
+                                Learn More <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Infrastructure -->
+                    <div class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                        <div class="h-32 overflow-hidden relative">
+                            <img src="uploads/image_23.png" alt="Infrastructure Products" class="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-all duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                                    <i class="fas fa-building text-purple-600"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800">Infrastructure</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">International standard cables, wires and pipes for infrastructure projects.</p>
+                            <a href="#infrastructure" class="inline-flex items-center text-primary-blue font-semibold hover:text-blue-700 transition-colors">
+                                Learn More <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section - Elegant Redesign -->
+    <section class="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Achievements</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Numbers that speak volumes about our commitment to excellence and growth</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Employees Card -->
+                <div class="group relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl transform rotate-1 group-hover:rotate-2 transition-all duration-500 opacity-10"></div>
+                    <div class="relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-users text-white text-2xl"></i>
+                            </div>
+                            <div class="text-5xl font-bold text-gray-900 mb-2 counter" data-target="500">0</div>
+                            <div class="text-lg font-semibold text-gray-700 mb-2">Employees</div>
+                            <p class="text-sm text-gray-500">Dedicated professionals</p>
+                            <div class="mt-4 w-full h-1 bg-gradient-to-r from-blue-200 to-blue-300 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cities Card -->
+                <div class="group relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-2xl transform rotate-1 group-hover:rotate-2 transition-all duration-500 opacity-10"></div>
+                    <div class="relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-emerald-600 to-emerald-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-map-marked-alt text-white text-2xl"></i>
+                            </div>
+                            <div class="text-5xl font-bold text-gray-900 mb-2 counter" data-target="250">0</div>
+                            <div class="text-lg font-semibold text-gray-700 mb-2">Cities & Districts</div>
+                            <p class="text-sm text-gray-500">Wide reach network</p>
+                            <div class="mt-4 w-full h-1 bg-gradient-to-r from-emerald-200 to-emerald-300 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Card -->
+                <div class="group relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl transform rotate-1 group-hover:rotate-2 transition-all duration-500 opacity-10"></div>
+                    <div class="relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-box text-white text-2xl"></i>
+                            </div>
+                            <div class="text-5xl font-bold text-gray-900 mb-2 counter" data-target="60">0</div>
+                            <div class="text-lg font-semibold text-gray-700 mb-2">Products</div>
+                            <p class="text-sm text-gray-500">Comprehensive range</p>
+                            <div class="mt-4 w-full h-1 bg-gradient-to-r from-purple-200 to-purple-300 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Years Card -->
+                <div class="group relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl transform rotate-1 group-hover:rotate-2 transition-all duration-500 opacity-10"></div>
+                    <div class="relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100">
+                        <div class="flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-gradient-to-r from-orange-600 to-orange-700 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-award text-white text-2xl"></i>
+                            </div>
+                            <div class="text-5xl font-bold text-gray-900 mb-2 counter" data-target="30">0</div>
+                            <div class="text-lg font-semibold text-gray-700 mb-2">Years in Business</div>
+                            <p class="text-sm text-gray-500">Trusted experience</p>
+                            <div class="mt-4 w-full h-1 bg-gradient-to-r from-orange-200 to-orange-300 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cables & Pipes Section - Matching Products Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h1 class="elementor-invisible animate-fadeInDown text-5xl font-bold text-gray-800 mb-6">Cables & Pipes</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover our comprehensive range of high-quality cables and pipes designed to meet your specific engineering needs</p>
+            </div>
+            
+            <!-- Tab Design -->
+            <div class="flex justify-center mb-16">
+                <div class="inline-flex bg-white rounded-lg shadow-md p-1 border border-gray-200">
+                    <button class="tab-btn px-12 py-4 bg-blue-600 text-white font-medium rounded-md transition-all duration-300" data-tab="cables">
+                        Cables
+                    </button>
+                    <button class="tab-btn px-12 py-4 text-gray-600 font-medium rounded-md transition-all duration-300 hover:text-gray-800" data-tab="pipes">
+                        Pipes
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Content - Cables -->
+            <div id="cables" class="tab-content">
+                <div class="grid lg:grid-cols-4 gap-12 items-start max-w-5xl mx-auto">
+                    <!-- Cables Product Card -->
+                    <div class="relative group lg:col-span-2">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="uploads/image_4.png" alt="Electrical Cables" class="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-all duration-500">
+                            </div>
+                            <div class="p-8 flex-1 flex flex-col">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="inline-block px-4 py-2 bg-blue-100 rounded-full">
+                                        <span class="text-blue-800 font-semibold text-sm">ELECTRICAL</span>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">PREMIUM</span>
+                                        <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-semibold">CERTIFIED</span>
+                                    </div>
+                                </div>
+                                <h2 class="text-3xl font-bold text-gray-800 mb-4">Electrical Cables</h2>
+                                <p class="text-gray-600 mb-6 text-lg leading-relaxed">Precision-engineered cables for reliable power transmission and safety-critical applications with unmatched durability.</p>
+                                
+                                <div class="grid grid-cols-3 gap-4 mb-6">
+                                    <div class="text-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="text-2xl font-bold text-blue-600">100%</div>
+                                        <div class="text-xs text-gray-600">Quality</div>
+                                    </div>
+                                    <div class="text-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="text-2xl font-bold text-blue-600">24/7</div>
+                                        <div class="text-xs text-gray-600">Support</div>
+                                    </div>
+                                    <div class="text-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="text-2xl font-bold text-blue-600">ISO</div>
+                                        <div class="text-xs text-gray-600">Certified</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-auto">
+                                    <a href="#contact" class="elementor-button">Explore Catalog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Cables Info -->
+                    <div class="space-y-8 lg:col-span-2">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Why Choose Our Cables?</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed text-justify">Our electrical cables are manufactured with the highest quality materials and advanced technology to ensure superior performance and safety.</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-blue-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Superior Durability</h4>
+                                    <p class="text-gray-600 text-sm">Built to withstand harsh conditions and heavy usage</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-blue-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Safety Certified</h4>
+                                    <p class="text-gray-600 text-sm">Meets all international safety standards</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-blue-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Energy Efficient</h4>
+                                    <p class="text-gray-600 text-sm">Optimized for minimal power loss</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content - Pipes -->
+            <div id="pipes" class="tab-content hidden">
+                <div class="grid lg:grid-cols-4 gap-12 items-start max-w-5xl mx-auto">
+                    <!-- Pipes Product Card -->
+                    <div class="relative group lg:col-span-2">
+                        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                            <div class="h-48 overflow-hidden">
+                                <img src="uploads/image_5.png" alt="Quality Pipes" class="w-full h-full object-cover transform scale-100 group-hover:scale-105 transition-all duration-500">
+                            </div>
+                            <div class="p-8 flex-1 flex flex-col">
+                                <div class="flex items-center justify-between mb-4">
+                                    <div class="inline-block px-4 py-2 bg-yellow-100 rounded-full">
+                                        <span class="text-yellow-800 font-semibold text-sm">PLUMBING</span>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-xs font-semibold">PREMIUM</span>
+                                        <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-semibold">DURABLE</span>
+                                    </div>
+                                </div>
+                                <h2 class="text-3xl font-bold text-gray-800 mb-4">Quality Pipes</h2>
+                                <p class="text-gray-600 mb-6 text-lg leading-relaxed">Advanced pipe solutions for fluid transport and infrastructure applications with exceptional durability and performance.</p>
+                                
+                                <div class="grid grid-cols-3 gap-4 mb-6">
+                                    <div class="text-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="text-2xl font-bold text-yellow-600">100%</div>
+                                        <div class="text-xs text-gray-600">Quality</div>
+                                    </div>
+                                    <div class="text-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="text-2xl font-bold text-yellow-600">30+</div>
+                                        <div class="text-xs text-gray-600">Years</div>
+                                    </div>
+                                    <div class="text-center p-3 bg-gray-50 rounded-lg">
+                                        <div class="text-2xl font-bold text-yellow-600">ISO</div>
+                                        <div class="text-xs text-gray-600">Certified</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-auto">
+                                    <a href="#contact" class="elementor-button">View Collection</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Pipes Info -->
+                    <div class="space-y-8 lg:col-span-2">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-800 mb-4">Why Choose Our Pipes?</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed text-justify">Our pipes are manufactured with premium materials and advanced engineering to ensure superior performance and longevity.</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-yellow-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Premium Materials</h4>
+                                    <p class="text-gray-600 text-sm">High-grade PVC and composite materials</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-yellow-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Cost Effective</h4>
+                                    <p class="text-gray-600 text-sm">Best value for your investment</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-yellow-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="fas fa-check text-yellow-600 text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800 mb-1">Easy Installation</h4>
+                                    <p class="text-gray-600 text-sm">Simple and quick setup process</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
+                <!-- Legacy Content -->
+                <div class="elementor-invisible animate-slideInLeft">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">A legacy built upon humility and innovation!</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed text-justify">
+                        Founded in 1992 with just two machines manufacturing garden hoses, Konami Plast Engineering has now evolved into a global multi-product & multi-brand conglomerate owning three production plants manufacturing a wide range of piping & electrical wiring solutions. Our aim is to establish ourselves as a formidable brand in South India competing with the best brands in the business.
+                    </p>
+                    
+                    <!-- Features Grid -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">E-STORE</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">ON TIME DELIVERY</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">ISO CERTIFIED</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">QUALITY PRODUCTS</span>
+                        </div>
+                        <div class="flex items-center space-x-3 col-span-2">
+                            <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <span class="text-gray-700 font-medium">ISI AND ASTM STANDARD PRODUCTS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Legacy Image -->
+                <div class="elementor-invisible animate-slideInRight">
+                    <img src="uploads/image_6.png" alt="Manufacturing Facility" class="rounded-2xl shadow-2xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - REMOVED AS PER ORIGINAL -->
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(to right, #105CAA, #1e40af); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; flex-shrink: 0;">
+                            KPE
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-3xl font-bold text-white leading-tight">
+                                Konami
+                            </div>
+                            <div class="text-xl font-semibold text-blue-300 leading-tight">
+                                Plast Engineering
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Leading manufacturer of high-quality engineering solutions and PVC pipes for industrial and agricultural applications.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="aboutUs.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="contacts.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="garden-hose.html" class="text-gray-400 hover:text-white transition">Garden Hose</a></li>
+                        <li><a href="hdpe-pipes.html" class="text-gray-400 hover:text-white transition">HDPE Pipes</a></li>
+                        <li><a href="pvc-rigid-pipe.html" class="text-gray-400 hover:text-white transition">PVC Rigid Pipe</a></li>
+                        <li><a href="suction-hose.html" class="text-gray-400 hover:text-white transition">Suction Hose</a></li>
+                        <li><a href="flat-submersible-cable.html" class="text-gray-400 hover:text-white transition">Submersible Cables</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            <span>72, Adarsh Industrial Estate, Chhatral, Gandhinagar, Gujarat, 382729</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+91 95749 52777</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>konamiplastengineering@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Konami Plast Engineering. Designed by Jani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Hero Slider - Matching original functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.qodef-e.swiper-slide');
+        const totalSlides = slides.length;
+        const slider = document.getElementById('heroSlider');
+        
+        // Create pagination bullets dynamically
+        const paginationContainer = document.querySelector('.swiper-pagination');
+        paginationContainer.innerHTML = '';
+        
+        for (let i = 0; i < totalSlides; i++) {
+            const bullet = document.createElement('div');
+            bullet.className = 'swiper-pagination-bullet';
+            if (i === 0) bullet.classList.add('active');
+            bullet.addEventListener('click', () => {
+                currentSlide = i;
+                showSlide(currentSlide);
+            });
+            paginationContainer.appendChild(bullet);
+        }
+        
+        function showSlide(index) {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Update pagination
+            const bullets = document.querySelectorAll('.swiper-pagination-bullet');
+            bullets.forEach((bullet, i) => {
+                bullet.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        document.querySelector('.swiper-button-next').addEventListener('click', nextSlide);
+        document.querySelector('.swiper-button-prev').addEventListener('click', prevSlide);
+
+        // Auto-play slider - matching original speed
+        setInterval(nextSlide, 5000);
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(() => animateCounters(), 10);
+                } else {
+                    counter.innerText = target + '+';
+                }
+            });
+        };
+
+        // Trigger counter animation when in viewport
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const counterSection = document.querySelector('.counter').parentElement.parentElement;
+        if (counterSection) {
+            observer.observe(counterSection);
+        }
+
+        // Tab Functionality
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                
+                // Update button styles
+                tabBtns.forEach(b => {
+                    b.classList.remove('bg-blue-600', 'text-white');
+                    b.classList.add('text-gray-600');
+                });
+                btn.classList.remove('text-gray-600');
+                btn.classList.add('bg-blue-600', 'text-white');
+                
+                // Show/hide content
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+                document.getElementById(tabId).classList.remove('hidden');
+            });
+        });
+
+        // Trigger animations on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.elementor-invisible');
+            
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+                
+                if (isVisible) {
+                    element.classList.remove('elementor-invisible');
+                    
+                    // Add appropriate animation class
+                    if (element.classList.contains('animate-slideInLeft')) {
+                        element.style.animation = 'slideInLeft 0.8s ease-out forwards';
+                    } else if (element.classList.contains('animate-slideInRight')) {
+                        element.style.animation = 'slideInRight 0.8s ease-out forwards';
+                    } else if (element.classList.contains('animate-fadeInDown')) {
+                        element.style.animation = 'fadeInDown 0.8s ease-out forwards';
+                    } else if (element.classList.contains('animate-fadeInUp')) {
+                        element.style.animation = 'fadeInUp 0.8s ease-out forwards';
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>

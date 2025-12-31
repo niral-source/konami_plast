@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+
+    <!-- This site is optimized with the Yoast SEO plugin v26.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+    <title>About Us - Konami Plast Engineering</title>
+    <meta name="description" content="Learn about Konami Plast Engineering - Leading manufacturer of high-quality PVC pipes and engineering solutions for industrial and agricultural applications.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Elementor CSS -->
+    <link rel='stylesheet' href='https://saveraind.com/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.32.4' media='all' />
+    <link rel='stylesheet' href='https://saveraind.com/wp-content/uploads/elementor/css/post-563.css?ver=1762523249' media='all' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap' />
+    
+    <style>
+        /* Match original design styles - EXACT SAME AS INDEX.HTML */
+        .txup {
+            height: 336px;
+            overflow: hidden;
+            transition: all 0.8s ease;
+        }
+        
+        .textup {
+            padding-top: 250px;
+            transition-duration: 0.8s;
+        }
+        
+        .txup:hover .textup {
+            padding-top: 0;
+        }
+        
+        .txup:hover h2 {
+            color: #105CAA;
+        }
+        
+        .follow {
+            color: #105CAA !important;
+            font-size: 22px;
+            font-weight: 900 !important;
+            border: 2px solid #105caa;
+            font-size: 21px;
+            padding: 0px 10px 4px 6px;
+            border-radius: 50%;
+            transform: rotate(20deg);
+            display: inline-block;
+        }
+        
+        .product-read-more {
+            display: none;
+            transition-duration: 0.8s;
+        }
+        
+        .product-read-more-sec:hover .product-read-more {
+            display: block;
+            transition-duration: 0.8s;
+        }
+        
+        /* Elementor-style animations - EXACT SAME AS INDEX.HTML */
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .elementor-invisible {
+            opacity: 0;
+        }
+        
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        
+        .animate-slideInRight {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        
+        .animate-fadeInDown {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        /* Original color scheme - EXACT SAME AS INDEX.HTML */
+        .primary-blue { color: #105CAA; }
+        .primary-orange { color: #F69320; }
+        .bg-primary-blue { background-color: #105CAA; }
+        .bg-primary-orange { background-color: #F69320; }
+        
+        /* Button styles matching original - EXACT SAME AS INDEX.HTML */
+        .elementor-button {
+            background-color: #F69320;
+            color: white;
+            padding: 10px 23px;
+            border-radius: 50px;
+            border: none;
+            font-family: "Inter", Sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .elementor-button:hover {
+            background: #005d8c;
+            color: white;
+        }
+        
+        /* Professional Tailwind CSS enhancements */
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .hover-scale {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #105CAA, #F69320);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #105CAA, #1e40af);
+        }
+        
+        .gradient-bg-orange {
+            background: linear-gradient(135deg, #F69320, #fb923c);
+        }
+        
+        /* Professional hover effects */
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+        
+        .image-hover {
+            transition: all 0.4s ease;
+            border-radius: 12px;
+        }
+        
+        .image-hover:hover {
+            transform: translateY(-10px) scale(1.08);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+        }
+        
+        /* Text animations */
+        .text-hover {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .text-hover::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #105CAA, #F69320);
+            transition: width 0.4s ease;
+        }
+        
+        .text-hover:hover::after {
+            width: 100%;
+        }
+        
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* Logo fix */
+        .border-3 {
+            border-width: 3px;
+        }
+        
+        /* Mobile menu */
+        .mobile-menu {
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+        
+        /* Elementor styles from about-us.html */
+        .elementor-element {
+            --flex-direction: initial;
+            --flex-wrap: initial;
+            --justify-content: initial;
+            --align-items: initial;
+            --align-content: initial;
+            --gap: initial;
+            --flex-basis: initial;
+            --flex-grow: initial;
+            --flex-shrink: initial;
+            --order: initial;
+            --align-self: initial;
+            position: relative;
+            flex-direction: var(--flex-direction);
+            flex-wrap: var(--flex-wrap);
+            justify-content: var(--justify-content);
+            align-items: var(--align-items);
+            align-content: var(--align-content);
+            gap: var(--gap);
+            flex-basis: var(--flex-basis);
+            flex-grow: var(--flex-grow);
+            flex-shrink: var(--flex-shrink);
+            order: var(--order);
+            align-self: var(--align-self);
+        }
+        
+        .e-con {
+            --border-radius: 0;
+            --border-top-width: 0px;
+            --border-right-width: 0px;
+            --border-bottom-width: 0px;
+            --border-left-width: 0px;
+            --border-style: solid;
+            --border-color: var(--e-global-color-secondary);
+            --container-widget-width: 100%;
+            --container-widget-flex-grow: 1;
+            --container-widget-align-self: initial;
+            --background-transition: 0.3s;
+            --margin-top: 0px;
+            --margin-right: 0px;
+            --margin-bottom: 0px;
+            --margin-left: 0px;
+            --padding-top: var(--container-padding-top, 20px);
+            --padding-right: var(--container-padding-right, 20px);
+            --padding-bottom: var(--container-padding-bottom, 20px);
+            --padding-left: var(--container-padding-left, 20px);
+            --z-index: 1;
+            border-radius: var(--border-radius);
+            border-style: var(--border-style);
+            border-color: var(--border-color);
+            border-width: var(--border-top-width) var(--border-right-width) var(--border-bottom-width) var(--border-left-width);
+            transition: background var(--background-transition);
+            margin: var(--margin-top) var(--margin-right) var(--margin-bottom) var(--margin-left);
+            padding: var(--padding-top) var(--padding-right) var(--padding-bottom) var(--padding-left);
+            z-index: var(--z-index);
+        }
+        
+        .e-con-full, .e-con-boxed {
+            width: 100%;
+        }
+        
+        .e-con-boxed {
+            --container-max-width: 1140px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .elementor-widget-container {
+            transition: none;
+        }
+        
+        .elementor-heading-title {
+            color: var(--e-global-color-primary);
+            font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+            font-size: var(--e-global-typography-primary-font-size);
+            font-weight: var(--e-global-typography-primary-font-weight);
+            line-height: var(--e-global-typography-primary-line-height);
+            letter-spacing: var(--e-global-typography-primary-letter-spacing);
+            word-spacing: var(--e-global-typography-primary-word-spacing);
+        }
+        
+        .elementor-size-default {
+            font-size: 20px;
+        }
+        
+        .elementor-widget-heading .elementor-heading-title {
+            color: var(--e-global-color-primary);
+            font-family: var(--e-global-typography-primary-font-family), Sans-serif;
+            font-size: var(--e-global-typography-primary-font-size);
+            font-weight: var(--e-global-typography-primary-font-weight);
+            line-height: var(--e-global-typography-primary-line-height);
+            letter-spacing: var(--e-global-typography-primary-letter-spacing);
+            word-spacing: var(--e-global-typography-primary-word-spacing);
+        }
+        
+        .elementor-widget-image img {
+            vertical-align: middle;
+            display: inline-block;
+        }
+        
+        .elementor-563 {
+            position: relative;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-411a887 {
+            background-color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-a898f3b {
+            text-align: center;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-a898f3b .elementor-heading-title {
+            color: #105CAA;
+            font-family: "Inter", Sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-d78638d {
+            background-color: #FFFFFF;
+            background-image: url();
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-556fda1 {
+            padding: 0px 20px 0px 20px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-92d721c .elementor-heading-title {
+            color: #105CAA;
+            font-family: "Inter", Sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-2825ebd .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-8177ec0 {
+            padding: 0px 20px 0px 20px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-21da370 {
+            background-color: #FFFFFF;
+            background-image: url();
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-3213784 {
+            padding: 0px 20px 0px 20px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-855ec8f {
+            padding: 0px 20px 0px 20px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-cf03975 .elementor-heading-title {
+            color: #105CAA;
+            font-family: "Inter", Sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-9eebaf0 .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-33399c9 {
+            background-color: #FFFFFF;
+            background-image: url();
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-3b35421 {
+            background-color: #105CAA;
+            padding: 30px 30px 30px 30px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-0ffaa79 .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-c645bc3 .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-b0a0cfb {
+            background-color: #F69320;
+            padding: 30px 30px 30px 30px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-ecc5d8a .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-743fc89 .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-279dd9c {
+            background-color: #105CAA;
+            padding: 30px 30px 30px 30px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-9fca6ca .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-2488a93 .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8em;
+        }
+        
+        /* Hover area effect for "From a Homegrown Brand to a Household Name" section */
+        .hover-area {
+            position: relative;
+        }
+        
+        .hover-area:hover .main-heading {
+            color: #F69320 !important;
+            position: relative;
+        }
+        
+        .hover-area:hover .main-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #105CAA, #F69320);
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        .hover-area:hover .main-text {
+            color: #105CAA !important;
+        }
+        
+        .hover-area:hover .area-image {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            border-radius: 16px;
+        }
+        
+        @keyframes slideIn {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        /* Smooth transitions for hover area */
+        .main-heading,
+        .main-text,
+        .area-image {
+            transition: all 0.4s ease;
+        }
+        
+        /* Custom spacing for Corporate Philosophy Block */
+        .elementor-563 .elementor-element.elementor-element-cf03975 .elementor-heading-title {
+            margin-bottom: 2.5rem !important;
+        }
+        
+        /* Our values and Mission boxes - BLACK hover effect */
+        .elementor-563 .elementor-element.elementor-element-3b35421:hover .elementor-heading-title {
+            color: #000000 !important;
+            transition: color 0.3s ease;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-279dd9c:hover .elementor-heading-title {
+            color: #000000 !important;
+            transition: color 0.3s ease;
+        }
+        
+        /* Vision box - BLACK hover effect */
+        .elementor-563 .elementor-element.elementor-element-b0a0cfb:hover .elementor-heading-title {
+            color: #000000 !important;
+            transition: color 0.3s ease;
+        }
+        
+        .elementor-heading-title:hover {
+            color: #F69320 !important;
+            transition: color 0.3s ease;
+        }
+        
+        :root {
+            --e-global-color-primary: #105CAA;
+            --e-global-color-secondary: #F69320;
+            --e-global-typography-primary-font-family: "Inter", Sans-serif;
+            --e-global-typography-primary-font-size: 20px;
+            --e-global-typography-primary-font-weight: 600;
+            --e-global-typography-primary-line-height: 1.5;
+            --e-global-typography-primary-letter-spacing: 0px;
+            --e-global-typography-primary-word-spacing: 0px;
+        }
+        
+        /* Elementor container styles */
+        .elementor-container {
+            --container-max-width: 1140px;
+            --container-widget-width: 100%;
+            --container-widget-flex-grow: 1;
+            --container-widget-align-self: initial;
+            --flex-wrap-mobile: wrap;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+        }
+        
+        .elementor-column {
+            position: relative;
+            min-height: 1px;
+            display: flex;
+        }
+        
+        .elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+            padding: 10px;
+        }
+        
+        .elementor-widget-wrap {
+            position: relative;
+            width: 100%;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        
+        .elementor-element-populated {
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .elementor-section {
+            position: relative;
+        }
+        
+        .elementor-section-boxed > .elementor-container {
+            max-width: 1140px;
+        }
+        
+        .elementor-section-full_width > .elementor-container {
+            max-width: 100%;
+        }
+        
+        .elementor-widget-heading .elementor-heading-title {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .elementor-widget-image img {
+            display: block;
+            width: 100%;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 1024px) {
+            .elementor-column {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .elementor-container {
+                --container-default-width: 100%;
+            }
+        }
+        
+        /* Complete Elementor CSS from post-563 */
+        .elementor-563 .elementor-element.elementor-element-411a887:not(.elementor-motion-effects-element-type-background), .elementor-563 .elementor-element.elementor-element-411a887 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+            background-color: #FFFFFF;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-411a887 {
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            padding: 10px 0px 10px 0px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-411a887 > .elementor-background-overlay {
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-a898f3b {
+            text-align: center;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-a898f3b .elementor-heading-title {
+            color: #105CAA;
+            font-family: "Inter", Sans-serif;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-d78638d:not(.elementor-motion-effects-element-type-background), .elementor-563 .elementor-element.elementor-element-d78638d > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+            background-color: #FFFFFF;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-d78638d {
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-d78638d > .elementor-background-overlay {
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-556fda1 {
+            --flex-direction: column;
+            --container-widget-width: 100%;
+            --container-widget-flex-grow: 1;
+            --container-widget-align-self: initial;
+            --flex-wrap-mobile: wrap;
+            padding: 0px 20px 0px 20px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-92d721c .elementor-heading-title {
+            color: #105CAA;
+            font-family: "Inter", Sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-2825ebd .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-8177ec0 {
+            --flex-direction: column;
+            --container-widget-width: 100%;
+            --container-widget-flex-grow: 1;
+            --container-widget-align-self: initial;
+            --flex-wrap-mobile: wrap;
+            padding: 0px 20px 0px 20px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-21da370:not(.elementor-motion-effects-element-type-background), .elementor-563 .elementor-element.elementor-element-21da370 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+            background-color: #FFFFFF;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-21da370 {
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-21da370 > .elementor-background-overlay {
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-3213784 {
+            --flex-direction: column;
+            --container-widget-width: 100%;
+            --container-widget-flex-grow: 1;
+            --container-widget-align-self: initial;
+            --flex-wrap-mobile: wrap;
+            padding: 0px 20px 0px 20px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-855ec8f {
+            --flex-direction: column;
+            --container-widget-width: 100%;
+            --container-widget-flex-grow: 1;
+            --container-widget-align-self: initial;
+            --flex-wrap-mobile: wrap;
+            padding: 0px 20px 0px 20px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-cf03975 .elementor-heading-title {
+            color: #105CAA;
+            font-family: "Inter", Sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-9eebaf0 .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-33399c9:not(.elementor-motion-effects-element-type-background), .elementor-563 .elementor-element.elementor-element-33399c9 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+            background-color: #FFFFFF;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-33399c9 {
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-33399c9 > .elementor-background-overlay {
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-35de0b1 {
+            --flex-direction: row;
+            --container-widget-width: calc( ( 1 - var( --flex-column-gap, 0.25 ) ) * 100% / 3 );
+            --container-widget-flex-grow: 0;
+            --container-widget-align-self: initial;
+            --flex-wrap-mobile: wrap;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-3b35421:not(.elementor-motion-effects-element-type-background), .elementor-563 .elementor-element.elementor-element-3b35421 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+            background-color: #FFFFFF;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-3b35421 {
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            padding: 30px 30px 30px 30px;
+            border-radius: 10px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-3b35421 > .elementor-background-overlay {
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-3b35421:hover {
+            box-shadow: 0 20px 50px rgba(16, 92, 170, 0.5);
+            transform: scale(1.05);
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-0ffaa79 .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-c645bc3 .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-0edeec9 {
+            --flex-direction: row;
+            --container-widget-width: calc( ( 1 - var( --flex-column-gap, 0.25 ) ) * 100% / 3 );
+            --container-widget-flex-grow: 0;
+            --container-widget-align-self: initial;
+            --flex-wrap-mobile: wrap;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-b0a0cfb:not(.elementor-motion-effects-element-type-background), .elementor-563 .elementor-element.elementor-element-b0a0cfb > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+            background-color: #FFFFFF;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-b0a0cfb {
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            padding: 30px 30px 30px 30px;
+            border-radius: 10px;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-b0a0cfb > .elementor-background-overlay {
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-b0a0cfb:hover {
+            box-shadow: 0 20px 50px rgba(16, 92, 170, 0.5);
+            transform: scale(1.05);
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-ecc5d8a .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-743fc89 .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-ed82ea0 {
+            --flex-direction: row;
+            --container-widget-width: calc( ( 1 - var( --flex-column-gap, 0.25 ) ) * 100% / 3 );
+            --container-widget-flex-grow: 0;
+            --container-widget-align-self: initial;
+            --flex-wrap-mobile: wrap;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-279dd9c:not(.elementor-motion-effects-element-type-background), .elementor-563 .elementor-element.elementor-element-279dd9c > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+            background-color: #FFFFFF;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-279dd9c {
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            padding: 30px 30px 30px 30px;
+            border-radius: 10px;
+            border: none;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-279dd9c > .elementor-background-overlay {
+            transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-279dd9c:hover {
+            box-shadow: 0 20px 50px rgba(16, 92, 170, 0.5);
+            transform: scale(1.05);
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-9fca6ca .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2em;
+        }
+        
+        .elementor-563 .elementor-element.elementor-element-2488a93 .elementor-heading-title {
+            color: #000000;
+            font-family: "Inter", Sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8em;
+        }
+        
+        @media(max-width:1024px) {
+            .elementor-563 .elementor-element.elementor-element-35de0b1 {
+                --flex-direction: column;
+                --container-widget-width: 100%;
+                --container-widget-flex-grow: 1;
+                --container-widget-align-self: initial;
+                --flex-wrap-mobile: wrap;
+            }
+            
+            .elementor-563 .elementor-element.elementor-element-0edeec9 {
+                --flex-direction: column;
+                --container-widget-width: 100%;
+                --container-widget-flex-grow: 1;
+                --container-widget-align-self: initial;
+                --flex-wrap-mobile: wrap;
+            }
+            
+            .elementor-563 .elementor-element.elementor-element-ed82ea0 {
+                --flex-direction: column;
+                --container-widget-width: 100%;
+                --container-widget-flex-grow: 1;
+                --container-widget-align-self: initial;
+                --flex-wrap-mobile: wrap;
+            }
+        }
+        
+        @media(max-width:767px) {
+            .elementor-563 .elementor-element.elementor-element-a898f3b .elementor-heading-title {
+                font-size: 32px;
+            }
+            
+            .elementor-563 .elementor-element.elementor-element-92d721c .elementor-heading-title {
+                font-size: 28px;
+            }
+            
+            .elementor-563 .elementor-element.elementor-element-cf03975 .elementor-heading-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Top Bar - Matching original design with primary-blue background -->
+    <div class="bg-primary-blue py-2 px-4">
+        <div class="container mx-auto flex justify-between items-center text-sm">
+            <div class="flex items-center space-x-4">
+                <a href="mailto:konamiplastengineering@gmail.com" class="flex items-center text-white hover:text-gray-200 transition">
+                    <i class="fas fa-envelope mr-2"></i>
+                    konamiplastengineering@gmail.com
+                </a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:+919574952777" class="flex items-center text-white hover:text-gray-200 transition">
+                    <i class="fas fa-phone mr-2"></i>
+                    +91 95749 52777
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header - Matching original structure -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex items-center space-x-4">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(to right, #105CAA, #1e40af); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; flex-shrink: 0;">
+                            KPE
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-3xl font-bold text-gray-800 leading-tight">
+                                Konami
+                            </div>
+                            <div class="text-xl font-semibold primary-blue leading-tight">
+                                Plast Engineering
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-8 flex-1 justify-end mr-24">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Home</a>
+                    <a href="aboutUs.html" class="text-gray-700 hover:text-primary-blue font-medium transition">About Us</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-primary-blue font-medium transition flex items-center">
+                            Products &amp; Solutions <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50" style="left: 0; right: auto;">
+                            <div class="py-2">
+                                <div class="relative group/submenu">
+                                    <a href="#" class="block px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 flex items-center justify-between">
+                                        Cables <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-0 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 z-50" style="left: 100%; right: auto;">
+                                        <a href="flat-submersible-cable.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Flat Submersible Cables</a>
+                                        <a href="pvc-house-wires.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC House Wires</a>
+                                        <a href="multicore-round-cables.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Multicore Round Cables</a>
+                                    </div>
+                                </div>
+                                <div class="relative group/submenu">
+                                    <a href="#" class="block px-4 py-2 text-gray-700 hover:text-primary-blue hover:bg-gray-50 flex items-center justify-between">
+                                        Pipes <i class="fas fa-chevron-right text-xs"></i>
+                                    </a>
+                                    <div class="absolute left-full top-0 ml-0 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover/submenu:opacity-100 group-hover/submenu:visible transition-all duration-300 z-50" style="left: 100%; right: auto;">
+                                        <a href="garden-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Garden Hose</a>
+                                        <a href="braided-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Braided Hose</a>
+                                        <a href="sink-waste-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Sink Waste Pipes</a>
+                                        <a href="inlet-outlet-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Inlet / Outlet Pipes</a>
+                                        <a href="pvc-casing-pipe.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Casing Pipe</a>
+                                        <a href="pvc-rigid-pipe.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Rigid Pipe</a>
+                                        <a href="pvc-sleeves.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">PVC Sleeves</a>
+                                        <a href="hdpe-pipes.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">HDPE Pipes</a>
+                                        <a href="krishi-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Krishi Hose</a>
+                                        <a href="suction-hose.html" class="block px-4 py-2 rounded-lg hover:bg-gray-50 text-gray-700 hover:text-primary-blue group-hover/submenu:text-primary-blue">Suction Hose</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary-blue font-medium transition">Blogs</a>
+                    <a href="contacts.html" class="elementor-button">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-80 h-full bg-white shadow-2xl z-50 lg:hidden">
+            <div class="p-4">
+                <button id="closeMobileMenu" class="text-gray-700 mb-8">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+                <nav class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-gray-700 hover:text-primary-blue font-medium">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-primary-blue font-medium">About Us</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary-blue font-medium">Products & Solutions</a>
+                    <a href="distributor-inquiry.html" class="text-gray-700 hover:text-primary-blue font-medium">Distributor Enquiry</a>
+                    <a href="careers.html" class="text-gray-700 hover:text-primary-blue font-medium">Careers</a>
+                    <a href="blog.html" class="text-gray-700 hover:text-primary-blue font-medium">Blogs</a>
+                    <a href="contacts.html" class="text-gray-700 hover:text-primary-blue font-medium">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+   
+     <!-- Main Content - Copied from about-us.html -->
+    <div data-elementor-type="wp-page" data-elementor-id="563" class="elementor elementor-563">
+        <!-- About Us Header Section -->
+    <div class="relative bg-cover bg-center bg-no-repeat py-16" style="background-image: url('uploads/image_10.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative container mx-auto px-4 flex items-center justify-center py-16">
+            <div class="text-center w-full">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mx-auto">About Us</h2>
+                <h1 class="text-xl md:text-2xl text-white mt-4">Home &nbsp;&nbsp;&gt;&nbsp;&nbsp; About Us</h1>
+            </div>
+        </div>
+    </div>
+        <div class="elementor-element elementor-element-d78638d e-flex e-con-boxed e-con e-parent bg-white shadow-lg rounded-2xl p-8 mb-8 hover-area" data-id="d78638d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="position: relative;">
+            <div class="e-con-inner">
+                <div class="elementor-element elementor-element-556fda1 e-con-full e-flex e-con e-child" data-id="556fda1" data-element_type="container">
+                    <div class="elementor-element elementor-element-92d721c elementor-widget elementor-widget-heading unique-slide-left" data-id="92d721c" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <h2 class="elementor-heading-title elementor-size-default text-4xl font-bold text-blue-600 mb-6 main-heading">From a Homegrown Brand to a Household Name</h2>				
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-2825ebd elementor-widget elementor-widget-heading unique-wave" data-id="2825ebd" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <p class="elementor-heading-title elementor-size-default text-gray-700 leading-relaxed main-text">Savera Pipes Group of Industries has a rather grounding history, beginning with the family starting from two machines, producing garden hoses. We have now expanded to three plants producing piping and electrical wiring solutions. The year 1992 saw the emergence of the Savera Group of Industries which was founded by Mr. B.R. Giria and his elder son then joined Mr. Vinod Giria. Several years later Mr. Vineet Giria, a '97 MBA Graduate, subsequently became part of Savera Group of Industries and over the years Savera Group of Industries expanded significantly as it turned into a big multi-product, multi-brand company. In the event that you are searching for the 'best pvc pipe manufacturers near me', Savera Pipes are among the top ten pvc pipe companies in the India.</p>				
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-8177ec0 e-con-full e-flex e-con e-child unique-slide-right" data-id="8177ec0" data-element_type="container">
+                    <div class="elementor-element elementor-element-99d797e elementor-widget elementor-widget-image" data-id="99d797e" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                            <img fetchpriority="high" decoding="async" width="474" height="328" src="uploads/image_1.png" class="attachment-large size-large wp-image-567 area-image rounded-xl shadow-md" alt="" srcset="uploads/image_1.png 474w" sizes="(max-width: 474px) 100vw, 474px" />						
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-element elementor-element-21da370 e-flex e-con-boxed e-con e-parent bg-gradient-to-r from-blue-50 to-indigo-50 shadow-xl rounded-3xl p-8 mb-8 hover-area" data-id="21da370" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="position: relative;">
+            <div class="e-con-inner">
+                <div class="elementor-element elementor-element-3213784 e-con-full e-flex e-con e-child unique-zoom-rotate" data-id="3213784" data-element_type="container">
+                    <div class="elementor-element elementor-element-d644505 elementor-widget elementor-widget-image" data-id="d644505" data-element_type="widget" data-widget_type="image.default">
+                        <div class="elementor-widget-container">
+                            <img decoding="async" width="411" height="411" src="uploads/image_2.png" class="attachment-large size-large wp-image-572 area-image rounded-2xl shadow-lg" alt="" srcset="uploads/image_2.png 411w" sizes="(max-width: 411px) 100vw, 411px" />						
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-855ec8f e-con-full e-flex e-con e-child unique-elastic" data-id="855ec8f" data-element_type="container">
+                    <div class="elementor-element elementor-element-cf03975 elementor-widget elementor-widget-heading" data-id="cf03975" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <h2 class="elementor-heading-title elementor-size-default text-4xl font-bold text-blue-700 mb-10 main-heading">Corporate Philosophy Block</h2>				
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-9eebaf0 elementor-widget elementor-widget-heading" data-id="9eebaf0" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <p class="elementor-heading-title elementor-size-default text-gray-600 leading-relaxed main-text">Through reputable brands such as Champion, Champion Flex, and Champion Gold, Savera Group of Industries has gained the confidence of its customers by delivering high-quality products, competitive pricing, and effective after-sales support. The company has established a solid reputation in the agricultural, industrial, and domestic markets both in India and internationally.</p>				
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-element elementor-element-33399c9 e-flex e-con-boxed e-con e-parent bg-gray-50 p-8" data-id="33399c9" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+            <div class="e-con-inner">
+                <div class="elementor-element elementor-element-35de0b1 e-con-full e-flex e-con e-child unique-bounce-up" data-id="35de0b1" data-element_type="container">
+                    <div class="elementor-element elementor-element-3b35421 e-con-full e-flex e-con e-child card-hover bg-white text-black p-8 rounded-2xl shadow-2xl transform transition-all duration-300 hover:scale-105" data-id="3b35421" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                        <div class="elementor-element elementor-element-0ffaa79 elementor-widget elementor-widget-heading" data-id="0ffaa79" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default text-black text-3xl font-bold mb-4">Our values</h2>				
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-c645bc3 elementor-widget elementor-widget-heading" data-id="c645bc3" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <p class="elementor-heading-title elementor-size-default text-black leading-relaxed">We prioritize quality excellence, ensuring superior products and innovation through advanced technology. Integrity, reliability, and customer satisfaction drive us, offering tailored solutions with timely delivery and consistency.</p>				
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-0edeec9 e-con-full e-flex e-con e-child unique-spiral" data-id="0edeec9" data-element_type="container">
+                    <div class="elementor-element elementor-element-b0a0cfb e-con-full e-flex e-con e-child card-hover bg-white text-black p-8 rounded-2xl shadow-2xl transform transition-all duration-300 hover:scale-105" data-id="b0a0cfb" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                        <div class="elementor-element elementor-element-ecc5d8a elementor-widget elementor-widget-heading" data-id="ecc5d8a" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default text-black text-3xl font-bold mb-4">Vision</h2>				
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-743fc89 elementor-widget elementor-widget-heading" data-id="743fc89" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <p class="elementor-heading-title elementor-size-default text-black leading-relaxed">To be the leading producer and supplier of high-quality, durable, and aesthetically designed PVC pipes, expanding our presence across India and globally while setting new benchmarks in innovation, reliability, and customer satisfaction.</p>				
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-ed82ea0 e-con-full e-flex e-con e-child unique-slide-left" data-id="ed82ea0" data-element_type="container">
+                    <div class="elementor-element elementor-element-279dd9c e-con-full e-flex e-con e-child card-hover bg-white text-black p-8 rounded-2xl shadow-2xl transform transition-all duration-300 hover:scale-105" data-id="279dd9c" data-element_type="container">
+                        <div class="elementor-element elementor-element-9fca6ca elementor-widget elementor-widget-heading" data-id="9fca6ca" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default text-black text-3xl font-bold mb-4">Mission</h2>				
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-2488a93 elementor-widget elementor-widget-heading" data-id="2488a93" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <p class="elementor-heading-title elementor-size-default text-black leading-relaxed">To maintain our brand value by consistently manufacturing and supplying superior PVC pipes, ensuring product excellence through stringent quality control, advanced technology, and customized solutions, while fulfilling bulk orders efficiently and meeting customer needs with precision.</p>				
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div style="width: 80px; height: 80px; background: linear-gradient(to right, #105CAA, #1e40af); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 24px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 3px solid white; flex-shrink: 0;">
+                            KPE
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="text-3xl font-bold text-white leading-tight">
+                                Konami
+                            </div>
+                            <div class="text-xl font-semibold text-blue-300 leading-tight">
+                                Plast Engineering
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Leading manufacturer of high-quality engineering solutions and PVC pipes for industrial and agricultural applications.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-primary-blue rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="careers.html" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="contacts.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><a href="garden-hose.html" class="text-gray-400 hover:text-white transition">Garden Hose</a></li>
+                        <li><a href="hdpe-pipes.html" class="text-gray-400 hover:text-white transition">HDPE Pipes</a></li>
+                        <li><a href="pvc-rigid-pipe.html" class="text-gray-400 hover:text-white transition">PVC Rigid Pipe</a></li>
+                        <li><a href="suction-hose.html" class="text-gray-400 hover:text-white transition">Suction Hose</a></li>
+                        <li><a href="flat-submersible-cable.html" class="text-gray-400 hover:text-white transition">Submersible Cables</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                            <span>72, Adarsh Industrial Estate, Chhatral, Gandhinagar, Gujarat, 382729</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+91 95749 52777</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>konamiplastengineering@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Konami Plast Engineering. Designed by Jani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Hero Slider - Matching original functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.qodef-e.swiper-slide');
+        const totalSlides = slides.length;
+        const slider = document.getElementById('heroSlider');
+        
+        // Create pagination bullets dynamically
+        const paginationContainer = document.querySelector('.swiper-pagination');
+        paginationContainer.innerHTML = '';
+        
+        for (let i = 0; i < totalSlides; i++) {
+            const bullet = document.createElement('div');
+            bullet.className = 'swiper-pagination-bullet';
+            if (i === 0) bullet.classList.add('active');
+            bullet.addEventListener('click', () => {
+                currentSlide = i;
+                showSlide(currentSlide);
+            });
+            paginationContainer.appendChild(bullet);
+        }
+        
+        function showSlide(index) {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            
+            // Update pagination
+            const bullets = document.querySelectorAll('.swiper-pagination-bullet');
+            bullets.forEach((bullet, i) => {
+                bullet.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        document.querySelector('.swiper-button-next').addEventListener('click', nextSlide);
+        document.querySelector('.swiper-button-prev').addEventListener('click', prevSlide);
+
+        // Auto-play slider - matching original speed
+        setInterval(nextSlide, 5000);
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = target / speed;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(() => animateCounters(), 10);
+                } else {
+                    counter.innerText = target + '+';
+                }
+            });
+        };
+
+        // Trigger counter animation when in viewport
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const counterSection = document.querySelector('.counter').parentElement.parentElement;
+        if (counterSection) {
+            observer.observe(counterSection);
+        }
+
+        // Tab Functionality
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tabId = btn.getAttribute('data-tab');
+                
+                // Update button styles
+                tabBtns.forEach(b => {
+                    b.classList.remove('bg-blue-600', 'text-white');
+                    b.classList.add('text-gray-600');
+                });
+                btn.classList.remove('text-gray-600');
+                btn.classList.add('bg-blue-600', 'text-white');
+                
+                // Show/hide content
+                tabContents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+                document.getElementById(tabId).classList.remove('hidden');
+            });
+        });
+
+
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            e.target.reset();
+        });
+    </script>
+</body>
+</html>
